@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import CustomView from '@/components/CustomView.vue';
-import { reactive } from 'vue'
+import { ref, reactive } from 'vue'
 const menuArrs: { url: string, target: string, reveal: string, message: string, infos: string }[] = reactive([
   { "url": "src/assets/images/tv.svg", "target": "#popupbox", "reveal": "chooseitem", "message": "Enter", "infos": "Watch 6000+ TV Channels..." },
   { "url": "src/assets/images/comprehensive.svg", "target": "routes/comprehensive.html", "reveal": "", "message": "Enter", "infos": "Watch Movies, Series, Animes..." },
@@ -8,18 +8,37 @@ const menuArrs: { url: string, target: string, reveal: string, message: string, 
   { "url": "src/assets/images/reading.svg", "target": "routes/novel.html", "reveal": "", "message": "Enter", "infos": "Reading More Than 100000+ Books..." },
   { "url": "src/assets/images/manga.svg", "target": "routes/manga.html", "reveal": "", "message": "Enter", "infos": "Reading Lots of Manga Books..." },
   { "url": "src/assets/images/music.svg", "target": "routes/music.html", "reveal": "", "message": "Enter", "infos": "Listen to The World Music..." },
-  { "url": "src/assets/images/game.svg", "target": "routes/game.html", "reveal": "", "message": "Enter", "infos": "Constructing until version 9.0.0" },
+  { "url": "src/assets/images/game.svg", "target": "routes/game.html", "reveal": "", "message": "Enter", "infos": "Constructing until version 9.0.0" }
 ]);
+let seenBar = ref(false);
+let seenBox = ref(false);
+
+function checkAdult(e:any): boolean{
+  if (seenBox.value == false) {
+    if(confirm("Are you over 18 years old?")){
+        menuArrs.push({ "url": "src/assets/images/sex.svg", "target": "routes/adult.html", "reveal": "", "message": "Enter", "infos": "Porn Videos..." })
+        seenBox.value = !seenBox.value;
+    }else{
+      seenBox.value = false
+      e.target.checked = false;
+    }
+  }else{
+    menuArrs.pop();
+    seenBox.value = !seenBox.value;
+  }
+  return seenBox.value;
+}
+
 </script>
 
 <template>
-  <div id="mySidenav" class="sidenav">
+  <div id="mySidenav" class="sidenav" v-show="seenBar">
     <h3>Easy Web TV</h3>
     <hr>
     <div>
       <span>Sensitive Content</span>
       <label class="switch">
-        <input type="checkbox" id="adultban">
+        <input type="checkbox" id="adultban" @click="checkAdult" />
         <span class="slider round"></span>
       </label>
     </div>
@@ -47,7 +66,7 @@ const menuArrs: { url: string, target: string, reveal: string, message: string, 
           style="color:#fff">APP</a></label>
     </div>
   </div>
-  <div id="main">
+  <div id="main" @click="seenBar = !seenBar">
     <span style="cursor:pointer"><img src="src/assets/images/menuicon.png"></span>
   </div>
   <div class="bodyCon08">

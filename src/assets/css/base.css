@@ -356,7 +356,6 @@ button.stylebtn:hover::after {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 25px;
-    display: none;
 }
 
 .sidenav h3 {

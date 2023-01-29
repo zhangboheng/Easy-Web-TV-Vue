@@ -14,5 +14,5 @@ import './assets/css/base.css';
       </nav>
     </div>
   </header> -->
-  <RouterView />
+  <!-- <RouterView /> -->
 </template>
