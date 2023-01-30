@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import CustomView from '@/components/CustomView.vue';
-import { ref, reactive } from 'vue'
+import { ref, reactive, onMounted } from 'vue';
+import OptionsComp from '@/components/Optionscomp.vue';
+
 const menuArrs: { url: string, target: string, reveal: string, message: string, infos: string }[] = reactive([
   { "url": "src/assets/images/tv.svg", "target": "#popupbox", "reveal": "chooseitem", "message": "Enter", "infos": "Watch 6000+ TV Channels..." },
   { "url": "src/assets/images/comprehensive.svg", "target": "routes/comprehensive.html", "reveal": "", "message": "Enter", "infos": "Watch Movies, Series, Animes..." },
@@ -12,6 +14,11 @@ const menuArrs: { url: string, target: string, reveal: string, message: string, 
 ]);
 let seenBar = ref(false);
 let seenBox = ref(false);
+const refSelected = ref();
+
+onMounted(() => {
+  console.log(refSelected.value.selected)
+});
 
 function checkAdult(e:any): boolean{
   if (seenBox.value == false) {
@@ -43,9 +50,7 @@ function checkAdult(e:any): boolean{
       </label>
     </div>
     <div>
-      <span>Languages</span>
-      <select id="languages" name="languages">
-      </select>
+      <OptionsComp input-name="Languages" alg="languages" bnm="languages" ref="refSelected" />
     </div>
     <div>
       <span>Clear</span>
