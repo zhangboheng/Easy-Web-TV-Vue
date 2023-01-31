@@ -3,6 +3,8 @@
   "exclude": [],
   "compilerOptions": {
     "composite": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
     "lib": [],
     "types": ["node", "jsdom"]
   }

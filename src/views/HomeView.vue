@@ -1,39 +1,48 @@
 <script setup lang="ts">
-import CustomView from '@/components/CustomView.vue';
 import { ref, reactive, onMounted } from 'vue';
+import CustomView from '@/components/CustomView.vue';
 import OptionsComp from '@/components/Optionscomp.vue';
+import * as translateJson from '../../static/jsons/translate.json';
 
-const menuArrs: { url: string, target: string, reveal: string, message: string, infos: string }[] = reactive([
-  { "url": "src/assets/images/tv.svg", "target": "#popupbox", "reveal": "chooseitem", "message": "Enter", "infos": "Watch 6000+ TV Channels..." },
-  { "url": "src/assets/images/comprehensive.svg", "target": "routes/comprehensive.html", "reveal": "", "message": "Enter", "infos": "Watch Movies, Series, Animes..." },
-  { "url": "src/assets/images/radio.svg", "target": "#popupbox", "reveal": "chooseitem", "message": "Enter", "infos": "Listen 28000+ Radio Stations..." },
-  { "url": "src/assets/images/reading.svg", "target": "routes/novel.html", "reveal": "", "message": "Enter", "infos": "Reading More Than 100000+ Books..." },
-  { "url": "src/assets/images/manga.svg", "target": "routes/manga.html", "reveal": "", "message": "Enter", "infos": "Reading Lots of Manga Books..." },
-  { "url": "src/assets/images/music.svg", "target": "routes/music.html", "reveal": "", "message": "Enter", "infos": "Listen to The World Music..." },
-  { "url": "src/assets/images/game.svg", "target": "routes/game.html", "reveal": "", "message": "Enter", "infos": "Constructing until version 9.0.0" }
-]);
+const startDefaultTranslate: string|null = window.localStorage.getItem('languages');
+let menuArrs: { url: string, target: string, reveal: string, message: string, infos: string }[] = reactive(translateJson.selectbox);
 let seenBar = ref(false);
-let seenBox = ref(false);
-const refSelected = ref();
+let seenAdt = ref(false);
+let message = ref("");
 
-onMounted(() => {
-  console.log(refSelected.value.selected)
+// Set Default Home
+onMounted(()=>{
+  if(window.localStorage.getItem('adult') == 'open'){
+    seenAdt.value = true;
+    menuArrs = startDefaultTranslate == null ? reactive(translateJson.selectbox) : reactive(translateJson[startDefaultTranslate]);
+  }else{
+    seenAdt.value = false;
+    menuArrs = menuArrs.filter(x=>x.target.indexOf('adult') == -1);
+  }
 });
 
-function checkAdult(e:any): boolean{
-  if (seenBox.value == false) {
-    if(confirm("Are you over 18 years old?")){
-        menuArrs.push({ "url": "src/assets/images/sex.svg", "target": "routes/adult.html", "reveal": "", "message": "Enter", "infos": "Porn Videos..." })
-        seenBox.value = !seenBox.value;
-    }else{
-      seenBox.value = false
+// Get Lanuage Select Box Compnonet Value
+const updateMessage = (val:string) => {
+  message.value = val;
+  menuArrs = reactive(translateJson[val]);
+  window.localStorage.setItem('languages', val);
+}
+
+function checkAdult(e: any) {
+  if (seenAdt.value == false) {
+    if (confirm("Are you over 18 years old?")) {
+      window.localStorage.setItem('adult', 'open');
+      menuArrs = startDefaultTranslate == null ? reactive(translateJson.selectbox) : reactive(translateJson[startDefaultTranslate]);
+      seenAdt.value = !seenAdt.value;
+    } else {
       e.target.checked = false;
     }
-  }else{
-    menuArrs.pop();
-    seenBox.value = !seenBox.value;
+  } else {
+    menuArrs = menuArrs.filter(x=>x.target.indexOf('adult') == -1);
+    seenAdt.value = !seenAdt.value;
+    localStorage.removeItem('adult');
   }
-  return seenBox.value;
+  return seenAdt
 }
 
 </script>
@@ -45,12 +54,13 @@ function checkAdult(e:any): boolean{
     <div>
       <span>Sensitive Content</span>
       <label class="switch">
-        <input type="checkbox" id="adultban" @click="checkAdult" />
+        <input type="checkbox" id="adultban" @click="checkAdult" v-on:checked="seenAdt"/>
         <span class="slider round"></span>
       </label>
     </div>
     <div>
-      <OptionsComp input-name="Languages" alg="languages" bnm="languages" ref="refSelected" />
+      <OptionsComp input-name="Languages" alg="languages" bnm="languages" v-model="message"
+        @update:model-value="updateMessage" />
     </div>
     <div>
       <span>Clear</span>

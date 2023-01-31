@@ -1,0 +1,118 @@
+{
+    "selectbox": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Enter",
+            "infos": "Watch 6000+ TV Channels..."
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive.html",
+            "reveal": "",
+            "message": "Enter",
+            "infos": "Watch Movies, Series, Animes..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Enter",
+            "infos": "Listen 28000+ Radio Stations..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel.html",
+            "reveal": "",
+            "message": "Enter",
+            "infos": "Reading More Than 100000+ Books..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga.html",
+            "reveal": "",
+            "message": "Enter",
+            "infos": "Reading Lots of Manga Books..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music.html",
+            "reveal": "",
+            "message": "Enter",
+            "infos": "Listen to The World Music..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game.html",
+            "reveal": "",
+            "message": "Enter",
+            "infos": "Constructing until version 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult.html",
+            "reveal": "",
+            "message": "Enter",
+            "infos": "Porn Videos..."
+        }
+    ],
+    "af": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Tik in",
+            "infos": "Kyk na 6000+ TV -kanale ..."
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive.html",
+            "reveal": "",
+            "message": "Tik in",
+            "infos": "Kyk films, reekse, anime ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Tik in",
+            "infos": "Luister na 28000+ radiostasies ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel.html",
+            "reveal": "",
+            "message": "Tik in",
+            "infos": "Lees meer as 100000+ boeke ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga.html",
+            "reveal": "",
+            "message": "Tik in",
+            "infos": "Lees baie mangaboeke ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music.html",
+            "reveal": "",
+            "message": "Tik in",
+            "infos": "Luister na The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game.html",
+            "reveal": "",
+            "message": "Tik in",
+            "infos": "Konstrueer tot weergawe 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult.html",
+            "reveal": "",
+            "message": "Tik in",
+            "infos": "Porno videos ..."
+        }
+    ]
+}

@@ -1,24 +1,27 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
+import { computed } from "@vue/reactivity"
+const emmits = defineEmits(['update:modelValue']);
 
-export interface API {
-    selected: string;
-}
-
-defineProps<{
+let props = defineProps<{
   inputName: string,
   alg: string,
   bnm: string,
+  modelValue: String
 }>();
 
-const selected = ref("==Select==");
-defineExpose({
-  selected,
+const propsMessage = computed({
+  get: () => {
+    return props.modelValue
+  },
+  set: (val) => {
+    emmits('update:modelValue', val)
+  }
+})
+//Set Options Selected Value
+onMounted(()=>{
+  propsMessage.value = "selectbox"
 });
-
-function changeSelected(){
-    console.info(selected.value);
-}
 
 const options = ref([
   { text: '==Select==', value: 'selectbox' },
@@ -149,11 +152,12 @@ const options = ref([
   { text: 'Yoruba - Èdè Yorùbá', value: 'yo' },
   { text: 'Zulu - isiZulu', value: 'zu' }
 ]);
+
 </script>
 
 <template>
       <span>{{ inputName }}</span>
-      <select :id="alg" :name="bnm" v-model="selected" @change="changeSelected()">
+      <select :id="alg" :name="bnm" v-model="propsMessage" >
         <option v-for="option in options" :value="option.value">
             {{ option.text }}
         </option>

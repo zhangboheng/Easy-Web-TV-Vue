@@ -1,5 +1,9 @@
 {
   "files": [],
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "noImplicitAny": false
+  },
   "references": [
     {
       "path": "./tsconfig.config.json"
