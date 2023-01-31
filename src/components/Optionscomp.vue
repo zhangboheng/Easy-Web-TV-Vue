@@ -4,7 +4,6 @@ import { computed } from "@vue/reactivity"
 const emmits = defineEmits(['update:modelValue']);
 
 let props = defineProps<{
-  inputName: string,
   alg: string,
   bnm: string,
   modelValue: String
@@ -17,10 +16,15 @@ const propsMessage = computed({
   set: (val) => {
     emmits('update:modelValue', val)
   }
-})
+});
+
 //Set Options Selected Value
 onMounted(()=>{
-  propsMessage.value = "selectbox"
+  if(window.localStorage.getItem('languages') != "selectbox"){
+    propsMessage.value = window.localStorage.getItem('languages') ?? "selectbox"
+  }else{
+    propsMessage.value = "selectbox"
+  }
 });
 
 const options = ref([
@@ -156,7 +160,6 @@ const options = ref([
 </script>
 
 <template>
-      <span>{{ inputName }}</span>
       <select :id="alg" :name="bnm" v-model="propsMessage" >
         <option v-for="option in options" :value="option.value">
             {{ option.text }}

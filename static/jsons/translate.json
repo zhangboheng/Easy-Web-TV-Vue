@@ -5,7 +5,13 @@
             "target": "#popupbox",
             "reveal": "chooseitem",
             "message": "Enter",
-            "infos": "Watch 6000+ TV Channels..."
+            "infos": "Watch 6000+ TV Channels...",
+            "switchIf": "Sensitive Content",
+            "langIf": "Languages",
+            "clearIf": "Clear",
+            "sourceIf": "Source",
+            "versionIf": "Version",
+            "aboutIf": "About"
         },
         {
             "url": "src/assets/images/comprehensive.svg",
@@ -63,7 +69,13 @@
             "target": "#popupbox",
             "reveal": "chooseitem",
             "message": "Tik in",
-            "infos": "Kyk na 6000+ TV -kanale ..."
+            "infos": "Kyk na 6000+ TV -kanale ...",
+            "switchIf": "sensitiewe inhoud",
+            "langIf": "Taal",
+            "clearIf": "duidelik",
+            "sourceIf": "Bron",
+            "versionIf": "Weergawe",
+            "aboutIf": "Ongeveer"
         },
         {
             "url": "src/assets/images/comprehensive.svg",
@@ -113,6 +125,66 @@
             "reveal": "",
             "message": "Tik in",
             "infos": "Porno videos ..."
+        }
+    ],
+    "sq": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Hyni",
+            "infos": "Shikoni 6000+ kanale televizive ...",
+            "switchIf": "Përmbajtje e ndjeshme",
+            "lang": "Gjuhët"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive.html",
+            "reveal": "",
+            "message": "Hyni",
+            "infos": "Shikoni filma, seri, anime ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Hyni",
+            "infos": "Dëgjoni 28000+ Stacione Radio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel.html",
+            "reveal": "",
+            "message": "Hyni",
+            "infos": "Leximi i më shumë se 100000+ librave ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga.html",
+            "reveal": "",
+            "message": "Hyni",
+            "infos": "Duke lexuar shumë libra Manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music.html",
+            "reveal": "",
+            "message": "Hyni",
+            "infos": "Dëgjoni Muzikën Botërore ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game.html",
+            "reveal": "",
+            "message": "Hyni",
+            "infos": "Ndërtimi deri në versionin 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult.html",
+            "reveal": "",
+            "message": "Hyni",
+            "infos": "Video pornografike ..."
         }
     ]
 }

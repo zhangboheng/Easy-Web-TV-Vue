@@ -1,13 +1,19 @@
 <script setup lang="ts">
-import { ref, reactive, onMounted } from 'vue';
+import { ref, reactive, onMounted, nextTick } from 'vue';
 import CustomView from '@/components/CustomView.vue';
 import OptionsComp from '@/components/Optionscomp.vue';
 import * as translateJson from '../../static/jsons/translate.json';
 
-const startDefaultTranslate: string|null = window.localStorage.getItem('languages');
-let menuArrs: { url: string, target: string, reveal: string, message: string, infos: string }[] = reactive(translateJson.selectbox);
+let startDefaultTranslate: string|null = window.localStorage.getItem('languages');
+let menuArrs: { url: string, target: string, reveal: string, message: string, infos: string, switchIf?:string, langIf?:string, clearIf?:string, sourceIf?:string, versionIf?:string, aboutIf?:string }[] = reactive(translateJson.selectbox);
 let seenBar = ref(false);
 let seenAdt = ref(false);
+let AdultIf = ref("");
+let LangIf = ref("");
+let ClearIf = ref("");
+let SourceIf = ref("");
+let VersionIf = ref("");
+let AboutIf = ref("");
 let message = ref("");
 
 // Set Default Home
@@ -24,10 +30,24 @@ onMounted(()=>{
 // Get Lanuage Select Box Compnonet Value
 const updateMessage = (val:string) => {
   message.value = val;
-  menuArrs = reactive(translateJson[val]);
+  if(window.localStorage.getItem('adult') == 'open'){
+    menuArrs = reactive(translateJson[val]);
+  }else{
+    menuArrs = reactive(translateJson[val]).filter((x: { target: string | string[]; })=>x.target.indexOf('adult') == -1);
+  }
+  AdultIf.value = translateJson[val][0].switchIf
+  LangIf.value = translateJson[val][0].langIf
+  ClearIf.value = translateJson[val][0].clearIf
+  SourceIf.value = translateJson[val][0].sourceIf
+  VersionIf.value = translateJson[val][0].versionIf
+  AboutIf.value = translateJson[val][0].aboutIf
   window.localStorage.setItem('languages', val);
+  nextTick(()=>{
+    startDefaultTranslate = window.localStorage.getItem('languages');
+  })
 }
 
+// Click Adult Options Event
 function checkAdult(e: any) {
   if (seenAdt.value == false) {
     if (confirm("Are you over 18 years old?")) {
@@ -42,7 +62,6 @@ function checkAdult(e: any) {
     seenAdt.value = !seenAdt.value;
     localStorage.removeItem('adult');
   }
-  return seenAdt
 }
 
 </script>
@@ -52,31 +71,32 @@ function checkAdult(e: any) {
     <h3>Easy Web TV</h3>
     <hr>
     <div>
-      <span>Sensitive Content</span>
+      <span>{{ AdultIf }}</span>
       <label class="switch">
-        <input type="checkbox" id="adultban" @click="checkAdult" v-on:checked="seenAdt"/>
+        <input type="checkbox" id="adultban" @click="checkAdult" :checked="seenAdt"/>
         <span class="slider round"></span>
       </label>
     </div>
     <div>
-      <OptionsComp input-name="Languages" alg="languages" bnm="languages" v-model="message"
+      <span>{{ LangIf }}</span>
+      <OptionsComp alg="languages" bnm="languages" v-model="message"
         @update:model-value="updateMessage" />
     </div>
     <div>
-      <span>Clear</span>
+      <span>{{ ClearIf }}</span>
       <button class="cachebtn">All</button>
     </div>
     <div>
-      <span>Source</span>
+      <span>{{ SourceIf }}</span>
       <button class="cachebtn"><a href="#sourcebox" data-reveal-id="sourceitem">Control</a></button>
     </div>
     <div>
-      <span>Version</span>
+      <span>{{ VersionIf }}</span>
       <label class="switch" style="cursor: pointer;"><a href="#logbox" data-reveal-id="logboxitem"
           style="color:#fff">8.2.0</a></label>
     </div>
     <div>
-      <span>About</span>
+      <span>{{ AboutIf }}</span>
       <label class="switch" style="cursor: pointer;"><a href="#infobox" data-reveal-id="infoboxitem"
           style="color:#fff">APP</a></label>
     </div>
