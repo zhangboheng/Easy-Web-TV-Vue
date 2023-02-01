@@ -2,6 +2,7 @@
 import { ref, reactive, onMounted, nextTick } from 'vue';
 import CustomView from '@/components/CustomView.vue';
 import OptionsComp from '@/components/Optionscomp.vue';
+import PopupBox from '@/components/PopupBox.vue'
 import * as translateJson from '../../static/jsons/translate.json';
 
 let startDefaultTranslate: string|null = window.localStorage.getItem('languages');
@@ -15,6 +16,11 @@ let SourceIf = ref("");
 let VersionIf = ref("");
 let AboutIf = ref("");
 let message = ref("");
+let SelectIf = ref("");
+let CountryIf = ref("");
+let LanguageIf = ref("");
+let CatagoryIf = ref("");
+let EnterIf = ref("");
 
 // Set Default Home
 onMounted(()=>{
@@ -41,6 +47,11 @@ const updateMessage = (val:string) => {
   SourceIf.value = translateJson[val][0].sourceIf
   VersionIf.value = translateJson[val][0].versionIf
   AboutIf.value = translateJson[val][0].aboutIf
+  SelectIf.value = translateJson[val][0].selectIf
+  EnterIf.value = translateJson[val][0].message
+  CountryIf.value = translateJson[val][0].countryIf
+  LanguageIf.value = translateJson[val][0].languageIf
+  CatagoryIf.value = translateJson[val][0].catagoryIf
   window.localStorage.setItem('languages', val);
   nextTick(()=>{
     startDefaultTranslate = window.localStorage.getItem('languages');
@@ -104,6 +115,13 @@ function checkAdult(e: any) {
   <div id="main" @click="seenBar = !seenBar">
     <span style="cursor:pointer"><img src="src/assets/images/menuicon.png"></span>
   </div>
+  <PopupBox>
+    <template v-slot:selectable>{{ SelectIf }}</template>
+    <template v-slot:coable>{{ CountryIf }}</template>
+    <template v-slot:laable>{{ LanguageIf }}</template>
+    <template v-slot:caable>{{ CatagoryIf }}</template>
+    <template v-slot:goable>{{ EnterIf }}</template>
+  </PopupBox>
   <div class="bodyCon08">
     <div class="students">
       <div id="four_flash">

@@ -55,7 +55,7 @@ const options = ref([
   { text: 'English (Canada)', value: 'en-CA' },
   { text: 'English (India)', value: 'en-IN' },
   { text: 'English (New Zealand)', value: 'en-NZ' },
-  { text: 'English (South Africa)', value: 'en-NZ' },
+  { text: 'English (South Africa)', value: 'en-ZA' },
   { text: 'English (United Kingdom)', value: 'en-GB' },
   { text: 'English (United States)', value: 'en-US' },
   { text: 'Esperanto - esperanto', value: 'eo' },
