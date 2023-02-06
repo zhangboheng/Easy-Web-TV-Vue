@@ -19,7 +19,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Enter",
             "infos": "Watch Movies, Series, Animes..."
@@ -33,35 +33,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading More Than 100000+ Books..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading Lots of Manga Books..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Enter",
             "infos": "Listen to The World Music..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Enter",
             "infos": "Constructing until version 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Enter",
             "infos": "Porn Videos..."
@@ -87,7 +87,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Tik in",
             "infos": "Kyk films, reekse, anime ..."
@@ -101,35 +101,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Tik in",
             "infos": "Lees meer as 100000+ boeke ..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Tik in",
             "infos": "Lees baie mangaboeke ..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Tik in",
             "infos": "Luister na The World Music ..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Tik in",
             "infos": "Konstrueer tot weergawe 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Tik in",
             "infos": "Porno videos ..."
@@ -155,7 +155,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Hyni",
             "infos": "Shikoni filma, seri, anime ..."
@@ -169,35 +169,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Hyni",
             "infos": "Leximi i më shumë se 100000+ librave ..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Hyni",
             "infos": "Duke lexuar shumë libra Manga ..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Hyni",
             "infos": "Dëgjoni Muzikën Botërore ..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Hyni",
             "infos": "Ndërtimi deri në versionin 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Hyni",
             "infos": "Video pornografike ..."
@@ -223,7 +223,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "ግባ",
             "infos": "ፊልሞችን ፣ ተከታታዮችን ፣ አኒሞችን ይመልከቱ ..."
@@ -237,35 +237,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "ግባ",
             "infos": "ከ 100000+ በላይ መጽሐፍትን በማንበብ ..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "ግባ",
             "infos": "ብዙ የማንጋ መጽሐፍትን በማንበብ ላይ ..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "ግባ",
             "infos": "የአለም ሙዚቃን ያዳምጡ ..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "ግባ",
             "infos": "እስከ ስሪት 9.0.0 ድረስ በመገንባት ላይ"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "ግባ",
             "infos": "የወሲብ ቪዲዮዎች ..."
@@ -291,7 +291,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "يدخل",
             "infos": "مشاهدة الافلام والمسلسلات والرسوم المتحركة ..."
@@ -305,35 +305,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "يدخل",
             "infos": "قراءة أكثر من 100000+ كتاب ..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "يدخل",
             "infos": "قراءة الكثير من كتب المانجا ..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "يدخل",
             "infos": "الاستماع إلى الموسيقى العالمية ..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "يدخل",
             "infos": "جاري الإنشاء حتى الإصدار 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "يدخل",
             "infos": "أشرطة الفيديو الإباحية ..."
@@ -359,7 +359,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Մուտքագրեք",
             "infos": "Դիտեք ֆիլմեր, սերիալներ, անիմեներ ..."
@@ -373,35 +373,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Մուտքագրեք",
             "infos": "Կարդում է ավելի քան 100000+ գիրք ..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Մուտքագրեք",
             "infos": "Մանգայի շատ գրքեր կարդալը ..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Մուտքագրեք",
             "infos": "Լսեք համաշխարհային երաժշտությունը ..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Մուտքագրեք",
             "infos": "Կառուցող մինչև 9.0.0 տարբերակ"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Մուտքագրեք",
             "infos": "Պոռնո տեսանյութեր ..."
@@ -427,7 +427,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Daxil edin",
             "infos": "Filmlərə, Seriyalara, Cizgi filmlərinə baxın ..."
@@ -441,35 +441,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Daxil edin",
             "infos": "100000 -dən çox kitab oxumaq ..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Daxil edin",
             "infos": "Çox Manga Kitabları Oxuyur ..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Daxil edin",
             "infos": "Dünya musiqisini dinləyin ..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Daxil edin",
             "infos": "9.0.0 versiyasına qədər tikinti"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Daxil edin",
             "infos": "Porno Videolar.."
@@ -495,7 +495,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Sartu",
             "infos": "Ikusi filmak, telesailak, Animes ..."
@@ -509,35 +509,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Sartu",
             "infos": "100.000 liburu baino gehiago irakurtzen ..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Sartu",
             "infos": "Manga liburu asko irakurtzen ..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Sartu",
             "infos": "Entzun The World Music ..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Sartu",
             "infos": "9.0.0 bertsiora arte eraikitzen"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Sartu",
             "infos": "Bideo pornoa ..."
@@ -563,7 +563,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Увядзіце",
             "infos": "Глядзіце фільмы, серыялы, анімацыі ..."
@@ -577,35 +577,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Увядзіце",
             "infos": "Чытанне больш за 100 000 кніг ..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Увядзіце",
             "infos": "Чытаючы шмат кніг мангі ..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Увядзіце",
             "infos": "Слухайце The World Music ..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Увядзіце",
             "infos": "Пабудова да версіі 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Увядзіце",
             "infos": "Відэа порна ..."
@@ -631,7 +631,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "প্রবেশ করুন",
             "infos": "সিনেমা, সিরিজ, এনিমেস দেখুন ..."
@@ -645,35 +645,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "প্রবেশ করুন",
             "infos": "১০০,০০০+ এরও বেশি বই পড়া ..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "প্রবেশ করুন",
             "infos": "প্রচুর মাঙ্গা বই পড়া ..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "প্রবেশ করুন",
             "infos": "বিশ্ব সঙ্গীত শুনুন ..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "প্রবেশ করুন",
             "infos": "সংস্করণ 9.0.0 পর্যন্ত নির্মাণ"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "প্রবেশ করুন",
             "infos": "ভিডিও পর্ন ..."
@@ -699,7 +699,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Enter",
             "infos": "Gledajte filmove, serije, animacije ..."
@@ -713,35 +713,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Enter",
             "infos": "Čitanje više od 100 000+ knjiga ..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Enter",
             "infos": "Čitanje mnogo manga knjiga ..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Enter",
             "infos": "Slušajte muziku svijeta ..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Enter",
             "infos": "Konstrukcija do verzije 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Enter",
             "infos": "Video porno ..."
@@ -767,7 +767,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Въведете",
             "infos": "Гледайте филми, сериали, анимации ..."
@@ -781,35 +781,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Въведете",
             "infos": "Четене на повече от 100 000+ книги ..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Въведете",
             "infos": "Четене на много книги за манга ..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Въведете",
             "infos": "Слушайте The World Music ..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Въведете",
             "infos": "Изграждане до версия 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Въведете",
             "infos": "Порно видео ..."
@@ -835,7 +835,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Entra",
             "infos": "Veure pel·lícules, sèries, Animes ..."
@@ -849,35 +849,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Entra",
             "infos": "S'estan llegint més de més de 100.000 llibres ..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Entra",
             "infos": "Llegint molts llibres de manga ..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Entra",
             "infos": "Escolta The World Music ..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Entra",
             "infos": "S'està construint fins a la versió 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Entra",
             "infos": "Vídeo porno ..."
@@ -903,7 +903,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "进入",
             "infos": "观看电影，电视剧，动漫......"
@@ -917,35 +917,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "进入",
             "infos": "阅读超过10万本图书..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "进入",
             "infos": "浏览海量漫画..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "进入",
             "infos": "聆听世界的音乐..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "进入",
             "infos": "建设中直到9.0.0版本"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "进入",
             "infos": "色情视频..."
@@ -971,7 +971,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "進入",
             "infos": "看電影、電視劇、動漫......"
@@ -985,35 +985,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "進入",
             "infos": "閱讀超過100000本書..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "進入",
             "infos": "瀏覽大量漫畫書..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "進入",
             "infos": "聽聽世界的音樂..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "進入",
             "infos": "建設中直到9.0.0版本"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "進入",
             "infos": "色情影片..."
@@ -1039,7 +1039,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "进入",
             "infos": "观看电影，电视剧，动漫......"
@@ -1053,35 +1053,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "进入",
             "infos": "阅读超过10万本图书..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "进入",
             "infos": "浏览海量漫画..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "进入",
             "infos": "聆听世界的音乐..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "进入",
             "infos": "建设中直到9.0.0版本"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "进入",
             "infos": "色情视频..."
@@ -1107,7 +1107,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "進入",
             "infos": "看電影、電視劇、動漫......"
@@ -1121,35 +1121,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "進入",
             "infos": "閱讀超過100000本書..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "進入",
             "infos": "瀏覽大量漫畫書..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "進入",
             "infos": "聽聽世界的音樂..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "進入",
             "infos": "建設中直到9.0.0版本"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "進入",
             "infos": "色情影片..."
@@ -1175,7 +1175,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Enter",
             "infos": "Watch Movies, Series, Animes..."
@@ -1189,35 +1189,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading More Than 100000+ Books..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading Lots of Manga Books..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Enter",
             "infos": "Listen to The World Music..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Enter",
             "infos": "Constructing until version 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Enter",
             "infos": "Porn Videos..."
@@ -1243,7 +1243,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Enter",
             "infos": "Watch Movies, Series, Animes..."
@@ -1257,35 +1257,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading More Than 100000+ Books..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading Lots of Manga Books..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Enter",
             "infos": "Listen to The World Music..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Enter",
             "infos": "Constructing until version 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Enter",
             "infos": "Porn Videos..."
@@ -1311,7 +1311,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Enter",
             "infos": "Watch Movies, Series, Animes..."
@@ -1325,35 +1325,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading More Than 100000+ Books..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading Lots of Manga Books..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Enter",
             "infos": "Listen to The World Music..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Enter",
             "infos": "Constructing until version 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Enter",
             "infos": "Porn Videos..."
@@ -1379,7 +1379,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Enter",
             "infos": "Watch Movies, Series, Animes..."
@@ -1393,35 +1393,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading More Than 100000+ Books..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading Lots of Manga Books..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Enter",
             "infos": "Listen to The World Music..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Enter",
             "infos": "Constructing until version 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Enter",
             "infos": "Porn Videos..."
@@ -1447,7 +1447,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Enter",
             "infos": "Watch Movies, Series, Animes..."
@@ -1461,35 +1461,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading More Than 100000+ Books..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading Lots of Manga Books..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Enter",
             "infos": "Listen to The World Music..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Enter",
             "infos": "Constructing until version 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Enter",
             "infos": "Porn Videos..."
@@ -1515,7 +1515,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Enter",
             "infos": "Watch Movies, Series, Animes..."
@@ -1529,35 +1529,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading More Than 100000+ Books..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading Lots of Manga Books..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Enter",
             "infos": "Listen to The World Music..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Enter",
             "infos": "Constructing until version 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Enter",
             "infos": "Porn Videos..."
@@ -1583,7 +1583,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Enter",
             "infos": "Watch Movies, Series, Animes..."
@@ -1597,35 +1597,35 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading More Than 100000+ Books..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading Lots of Manga Books..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Enter",
             "infos": "Listen to The World Music..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Enter",
             "infos": "Constructing until version 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Enter",
             "infos": "Porn Videos..."
@@ -1651,7 +1651,7 @@
         },
         {
             "url": "src/assets/images/comprehensive.svg",
-            "target": "routes/comprehensive.html",
+            "target": "routes/comprehensive",
             "reveal": "",
             "message": "Enter",
             "infos": "Watch Movies, Series, Animes..."
@@ -1665,38 +1665,310 @@
         },
         {
             "url": "src/assets/images/reading.svg",
-            "target": "routes/novel.html",
+            "target": "routes/novel",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading More Than 100000+ Books..."
         },
         {
             "url": "src/assets/images/manga.svg",
-            "target": "routes/manga.html",
+            "target": "routes/manga",
             "reveal": "",
             "message": "Enter",
             "infos": "Reading Lots of Manga Books..."
         },
         {
             "url": "src/assets/images/music.svg",
-            "target": "routes/music.html",
+            "target": "routes/music",
             "reveal": "",
             "message": "Enter",
             "infos": "Listen to The World Music..."
         },
         {
             "url": "src/assets/images/game.svg",
-            "target": "routes/game.html",
+            "target": "routes/game",
             "reveal": "",
             "message": "Enter",
             "infos": "Constructing until version 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
-            "target": "routes/adult.html",
+            "target": "routes/adult",
             "reveal": "",
             "message": "Enter",
             "infos": "Porn Videos..."
+        }
+    ],
+    "co": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entre",
+            "infos": "Guarda 6000+ Canali TV ...",
+            "switchIf": "Cuntenutu Sensitivu",
+            "langIf": "Lingue",
+            "clearIf": "chjaru",
+            "sourceIf": "Surghjente",
+            "versionIf": "Versione",
+            "aboutIf": "Circa",
+            "selectIf": "Selezziunà",
+            "countryIf": "Paesi",
+            "languageIf": "Lingue",
+            "catagoryIf": "Catigurìa"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Entre",
+            "infos": "Guarda Film, Serie, Animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entre",
+            "infos": "Ascolta 28000+ Stazioni Radio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Entre",
+            "infos": "Leghjendu Più di 100000+ Libri ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Entre",
+            "infos": "Leghjendu Parechji Libri Manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Entre",
+            "infos": "Escolta The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Entre",
+            "infos": "Custruisce finu à a versione 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Entre",
+            "infos": "Video porno ..."
+        }
+    ],
+    "hr": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Unesi",
+            "infos": "Gledajte 6000+ TV kanala ...",
+            "switchIf": "Osjetljiv sadržaj",
+            "langIf": "Jezici",
+            "clearIf": "čisto",
+            "sourceIf": "Izvor",
+            "versionIf": "Verzija",
+            "aboutIf": "Oko",
+            "selectIf": "Odaberi",
+            "countryIf": "Zemlje",
+            "languageIf": "Jezici",
+            "catagoryIf": "Kategorija"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Unesi",
+            "infos": "Gledajte filmove, serije, animacije ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Unesi",
+            "infos": "Slušajte 28 000+ radio stanica ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Unesi",
+            "infos": "Čitanje više od 100 000+ knjiga ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Unesi",
+            "infos": "Čitanje puno manga knjiga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Unesi",
+            "infos": "Slušajte glazbu svijeta ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Unesi",
+            "infos": "Konstruira se do verzije 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Unesi",
+            "infos": "Video pornografija ..."
+        }
+    ],
+    "cs": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Vstupte",
+            "infos": "Sledujte více než 6000 televizních kanálů ...",
+            "switchIf": "Citlivý obsah",
+            "langIf": "Jazyky",
+            "clearIf": "Průhledná",
+            "sourceIf": "Zdroj",
+            "versionIf": "Verze",
+            "aboutIf": "O",
+            "selectIf": "Vybrat",
+            "countryIf": "Země",
+            "languageIf": "Jazyky",
+            "catagoryIf": "Kategorie"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Vstupte",
+            "infos": "Sledujte filmy, seriály, anime ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Vstupte",
+            "infos": "Poslouchejte 28 000+ rozhlasových stanic ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Vstupte",
+            "infos": "Čtení více než 100 000+ knih ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Vstupte",
+            "infos": "Čtení spousty knih o mangách ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Vstupte",
+            "infos": "Poslechněte si The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Vstupte",
+            "infos": "Konstrukce do verze 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Vstupte",
+            "infos": "Video porno ..."
+        }
+    ],
+    "da": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Gå ind",
+            "infos": "Se 6000+ tv -kanaler ...",
+            "switchIf": "Følsomt indhold",
+            "langIf": "Sprog",
+            "clearIf": "klar",
+            "sourceIf": "Kilde",
+            "versionIf": "Version",
+            "aboutIf": "Om",
+            "selectIf": "Vælg",
+            "countryIf": "Lande",
+            "languageIf": "Sprog",
+            "catagoryIf": "Kategori"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Gå ind",
+            "infos": "Se film, serier, anime ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Gå ind",
+            "infos": "Lyt til 28000+ radiostationer ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Gå ind",
+            "infos": "Læser mere end 100000+ bøger ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Gå ind",
+            "infos": "Læser masser af mangabøger ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Gå ind",
+            "infos": "Lyt til The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Gå ind",
+            "infos": "Konstruerer indtil version 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Gå ind",
+            "infos": "Videoporno ..."
         }
     ]
 }

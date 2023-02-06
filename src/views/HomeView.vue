@@ -2,11 +2,14 @@
 import { ref, reactive, onMounted, nextTick } from 'vue';
 import CustomView from '@/components/CustomView.vue';
 import OptionsComp from '@/components/Optionscomp.vue';
-import PopupBox from '@/components/PopupBox.vue'
+import PopupBox from '@/components/PopupBox.vue';
+import History from '@/components/History.vue';
+import AppAbout from '@/components/InfoBox.vue';
+import SouceControl from '@/components/ToSource.vue';
 import * as translateJson from '../../static/jsons/translate.json';
 
-let startDefaultTranslate: string|null = window.localStorage.getItem('languages');
-let menuArrs: { url: string, target: string, reveal: string, message: string, infos: string, switchIf?:string, langIf?:string, clearIf?:string, sourceIf?:string, versionIf?:string, aboutIf?:string }[] = reactive(translateJson.selectbox);
+let startDefaultTranslate: string | null = window.localStorage.getItem('languages');
+let menuArrs: { url: string, target: string, reveal: string, message: string, infos: string, switchIf?: string, langIf?: string, clearIf?: string, sourceIf?: string, versionIf?: string, aboutIf?: string }[] = reactive(translateJson.selectbox);
 let seenBar = ref(false);
 let seenAdt = ref(false);
 let AdultIf = ref("");
@@ -23,23 +26,28 @@ let CatagoryIf = ref("");
 let EnterIf = ref("");
 
 // Set Default Home
-onMounted(()=>{
-  if(window.localStorage.getItem('adult') == 'open'){
+onMounted(() => {
+  if (window.localStorage.getItem('adult') == 'open') {
     seenAdt.value = true;
     menuArrs = startDefaultTranslate == null ? reactive(translateJson.selectbox) : reactive(translateJson[startDefaultTranslate]);
-  }else{
+  } else {
     seenAdt.value = false;
-    menuArrs = menuArrs.filter(x=>x.target.indexOf('adult') == -1);
+    menuArrs = menuArrs.filter(x => x.target.indexOf('adult') == -1);
+  }
+  //if user back refresh page
+  let link = window.location.href;
+  if (link.indexOf('popupbox') > -1) {
+    window.location.replace('/');
   }
 });
 
 // Get Lanuage Select Box Compnonet Value
-const updateMessage = (val:string) => {
+const updateMessage = (val: string) => {
   message.value = val;
-  if(window.localStorage.getItem('adult') == 'open'){
+  if (window.localStorage.getItem('adult') == 'open') {
     menuArrs = reactive(translateJson[val]);
-  }else{
-    menuArrs = reactive(translateJson[val]).filter((x: { target: string | string[]; })=>x.target.indexOf('adult') == -1);
+  } else {
+    menuArrs = reactive(translateJson[val]).filter((x: { target: string | string[]; }) => x.target.indexOf('adult') == -1);
   }
   AdultIf.value = translateJson[val][0].switchIf
   LangIf.value = translateJson[val][0].langIf
@@ -53,7 +61,7 @@ const updateMessage = (val:string) => {
   LanguageIf.value = translateJson[val][0].languageIf
   CatagoryIf.value = translateJson[val][0].catagoryIf
   window.localStorage.setItem('languages', val);
-  nextTick(()=>{
+  nextTick(() => {
     startDefaultTranslate = window.localStorage.getItem('languages');
   })
 }
@@ -69,9 +77,18 @@ function checkAdult(e: any) {
       e.target.checked = false;
     }
   } else {
-    menuArrs = menuArrs.filter(x=>x.target.indexOf('adult') == -1);
+    menuArrs = menuArrs.filter(x => x.target.indexOf('adult') == -1);
     seenAdt.value = !seenAdt.value;
     localStorage.removeItem('adult');
+  }
+}
+
+// Clear All LocalStorage
+function clearAll() {
+  if (confirm("Are you sure clear the cache?")) {
+    localStorage.clear();
+  } else {
+    console.log("Not do nothing...");
   }
 }
 
@@ -84,18 +101,17 @@ function checkAdult(e: any) {
     <div>
       <span>{{ AdultIf }}</span>
       <label class="switch">
-        <input type="checkbox" id="adultban" @click="checkAdult" :checked="seenAdt"/>
+        <input type="checkbox" id="adultban" @click="checkAdult" :checked="seenAdt" />
         <span class="slider round"></span>
       </label>
     </div>
     <div>
       <span>{{ LangIf }}</span>
-      <OptionsComp alg="languages" bnm="languages" v-model="message"
-        @update:model-value="updateMessage" />
+      <OptionsComp alg="languages" bnm="languages" v-model="message" @update:model-value="updateMessage" />
     </div>
     <div>
       <span>{{ ClearIf }}</span>
-      <button class="cachebtn">All</button>
+      <button class="cachebtn" @click="clearAll()">All</button>
     </div>
     <div>
       <span>{{ SourceIf }}</span>
@@ -115,6 +131,9 @@ function checkAdult(e: any) {
   <div id="main" @click="seenBar = !seenBar">
     <span style="cursor:pointer"><img src="src/assets/images/menuicon.png"></span>
   </div>
+  <SouceControl>{{ SelectIf }}</SouceControl>
+  <History />
+  <AppAbout />
   <PopupBox>
     <template v-slot:selectable>{{ SelectIf }}</template>
     <template v-slot:coable>{{ CountryIf }}</template>

@@ -246,7 +246,6 @@ input:checked+.slider:before {
     width: 50%;
     height: 30%;
     left: 24%;
-    display: none;
 }
 
 .circlescon li img {
