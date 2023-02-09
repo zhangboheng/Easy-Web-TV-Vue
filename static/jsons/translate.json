@@ -1155,6 +1155,346 @@
             "infos": "色情影片..."
         }
     ],
+    "co": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entre",
+            "infos": "Guarda 6000+ Canali TV ...",
+            "switchIf": "Cuntenutu Sensitivu",
+            "langIf": "Lingue",
+            "clearIf": "chjaru",
+            "sourceIf": "Surghjente",
+            "versionIf": "Versione",
+            "aboutIf": "Circa",
+            "selectIf": "Selezziunà",
+            "countryIf": "Paesi",
+            "languageIf": "Lingue",
+            "catagoryIf": "Catigurìa"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Entre",
+            "infos": "Guarda Film, Serie, Animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entre",
+            "infos": "Ascolta 28000+ Stazioni Radio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Entre",
+            "infos": "Leghjendu Più di 100000+ Libri ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Entre",
+            "infos": "Leghjendu Parechji Libri Manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Entre",
+            "infos": "Escolta The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Entre",
+            "infos": "Custruisce finu à a versione 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Entre",
+            "infos": "Video porno ..."
+        }
+    ],
+    "hr": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Unesi",
+            "infos": "Gledajte 6000+ TV kanala ...",
+            "switchIf": "Osjetljiv sadržaj",
+            "langIf": "Jezici",
+            "clearIf": "čisto",
+            "sourceIf": "Izvor",
+            "versionIf": "Verzija",
+            "aboutIf": "Oko",
+            "selectIf": "Odaberi",
+            "countryIf": "Zemlje",
+            "languageIf": "Jezici",
+            "catagoryIf": "Kategorija"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Unesi",
+            "infos": "Gledajte filmove, serije, animacije ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Unesi",
+            "infos": "Slušajte 28 000+ radio stanica ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Unesi",
+            "infos": "Čitanje više od 100 000+ knjiga ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Unesi",
+            "infos": "Čitanje puno manga knjiga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Unesi",
+            "infos": "Slušajte glazbu svijeta ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Unesi",
+            "infos": "Konstruira se do verzije 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Unesi",
+            "infos": "Video pornografija ..."
+        }
+    ],
+    "cs": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Vstupte",
+            "infos": "Sledujte více než 6000 televizních kanálů ...",
+            "switchIf": "Citlivý obsah",
+            "langIf": "Jazyky",
+            "clearIf": "Průhledná",
+            "sourceIf": "Zdroj",
+            "versionIf": "Verze",
+            "aboutIf": "O",
+            "selectIf": "Vybrat",
+            "countryIf": "Země",
+            "languageIf": "Jazyky",
+            "catagoryIf": "Kategorie"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Vstupte",
+            "infos": "Sledujte filmy, seriály, anime ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Vstupte",
+            "infos": "Poslouchejte 28 000+ rozhlasových stanic ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Vstupte",
+            "infos": "Čtení více než 100 000+ knih ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Vstupte",
+            "infos": "Čtení spousty knih o mangách ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Vstupte",
+            "infos": "Poslechněte si The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Vstupte",
+            "infos": "Konstrukce do verze 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Vstupte",
+            "infos": "Video porno ..."
+        }
+    ],
+    "da": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Gå ind",
+            "infos": "Se 6000+ tv -kanaler ...",
+            "switchIf": "Følsomt indhold",
+            "langIf": "Sprog",
+            "clearIf": "klar",
+            "sourceIf": "Kilde",
+            "versionIf": "Version",
+            "aboutIf": "Om",
+            "selectIf": "Vælg",
+            "countryIf": "Lande",
+            "languageIf": "Sprog",
+            "catagoryIf": "Kategori"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Gå ind",
+            "infos": "Se film, serier, anime ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Gå ind",
+            "infos": "Lyt til 28000+ radiostationer ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Gå ind",
+            "infos": "Læser mere end 100000+ bøger ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Gå ind",
+            "infos": "Læser masser af mangabøger ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Gå ind",
+            "infos": "Lyt til The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Gå ind",
+            "infos": "Konstruerer indtil version 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Gå ind",
+            "infos": "Videoporno ..."
+        }
+    ],
+    "nl": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Binnenkomen",
+            "infos": "Kijk 6000+ tv-kanalen...",
+            "switchIf": "Gevoelige inhoud",
+            "langIf": "Talen",
+            "clearIf": "Doorzichtig",
+            "sourceIf": "Bron",
+            "versionIf": "Versie",
+            "aboutIf": "Wat betreft'",
+            "selectIf": "Selecteer",
+            "countryIf": "Landen",
+            "languageIf": "Talen",
+            "catagoryIf": "Categorie"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Binnenkomen",
+            "infos": "Kijk films, series, animes..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Binnenkomen",
+            "infos": "Luister 28000+ radiostations..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Binnenkomen",
+            "infos": "Meer dan 100000+ boeken lezen..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Binnenkomen",
+            "infos": "Veel mangaboeken lezen..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Binnenkomen",
+            "infos": "Luister naar de wereldmuziek..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Binnenkomen",
+            "infos": "Bouwen tot versie 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Binnenkomen",
+            "infos": "Video porno..."
+        }
+    ],
     "en": [
         {
             "url": "src/assets/images/tv.svg",
@@ -1699,276 +2039,2724 @@
             "infos": "Porn Videos..."
         }
     ],
-    "co": [
+    "eo": [
         {
             "url": "src/assets/images/tv.svg",
             "target": "#popupbox",
             "reveal": "chooseitem",
-            "message": "Entre",
-            "infos": "Guarda 6000+ Canali TV ...",
-            "switchIf": "Cuntenutu Sensitivu",
-            "langIf": "Lingue",
-            "clearIf": "chjaru",
-            "sourceIf": "Surghjente",
-            "versionIf": "Versione",
-            "aboutIf": "Circa",
-            "selectIf": "Selezziunà",
-            "countryIf": "Paesi",
-            "languageIf": "Lingue",
-            "catagoryIf": "Catigurìa"
+            "message": "Eniru",
+            "infos": "Spektu 6000+ televidajn kanalojn ...",
+            "switchIf": "Sentema Enhavo",
+            "langIf": "Lingvoj",
+            "clearIf": "klara",
+            "sourceIf": "Fonto",
+            "versionIf": "Versio",
+            "aboutIf": "Pri",
+            "selectIf": "Elektu",
+            "countryIf": "Landoj",
+            "languageIf": "Lingvoj",
+            "catagoryIf": "Kategorio"
         },
         {
             "url": "src/assets/images/comprehensive.svg",
             "target": "routes/comprehensive",
             "reveal": "",
-            "message": "Entre",
-            "infos": "Guarda Film, Serie, Animes ..."
+            "message": "Eniru",
+            "infos": "Spektu Filmojn, Seriojn, Animojn ..."
         },
         {
             "url": "src/assets/images/radio.svg",
             "target": "#popupbox",
             "reveal": "chooseitem",
-            "message": "Entre",
-            "infos": "Ascolta 28000+ Stazioni Radio ..."
+            "message": "Eniru",
+            "infos": "Aŭskultu 28000+ Radiostaciojn ..."
         },
         {
             "url": "src/assets/images/reading.svg",
             "target": "routes/novel",
             "reveal": "",
-            "message": "Entre",
-            "infos": "Leghjendu Più di 100000+ Libri ..."
+            "message": "Eniru",
+            "infos": "Legante Pli ol 100000+ Librojn ..."
         },
         {
             "url": "src/assets/images/manga.svg",
             "target": "routes/manga",
             "reveal": "",
-            "message": "Entre",
-            "infos": "Leghjendu Parechji Libri Manga ..."
+            "message": "Eniru",
+            "infos": "Legante Multajn Mangaajn Librojn ..."
         },
         {
             "url": "src/assets/images/music.svg",
             "target": "routes/music",
             "reveal": "",
-            "message": "Entre",
-            "infos": "Escolta The World Music ..."
+            "message": "Eniru",
+            "infos": "Aŭskultu La Mondan Muzikon ..."
         },
         {
             "url": "src/assets/images/game.svg",
             "target": "routes/game",
             "reveal": "",
-            "message": "Entre",
-            "infos": "Custruisce finu à a versione 9.0.0"
+            "message": "Eniru",
+            "infos": "Konstruante ĝis versio 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
             "target": "routes/adult",
             "reveal": "",
-            "message": "Entre",
+            "message": "Eniru",
             "infos": "Video porno ..."
         }
     ],
-    "hr": [
+    "et": [
         {
             "url": "src/assets/images/tv.svg",
             "target": "#popupbox",
             "reveal": "chooseitem",
-            "message": "Unesi",
-            "infos": "Gledajte 6000+ TV kanala ...",
-            "switchIf": "Osjetljiv sadržaj",
-            "langIf": "Jezici",
-            "clearIf": "čisto",
-            "sourceIf": "Izvor",
-            "versionIf": "Verzija",
-            "aboutIf": "Oko",
-            "selectIf": "Odaberi",
-            "countryIf": "Zemlje",
-            "languageIf": "Jezici",
-            "catagoryIf": "Kategorija"
+            "message": "Sisenema",
+            "infos": "Vaata üle 6000 telekanali ...",
+            "switchIf": "Tundlik sisu",
+            "langIf": "Keeled",
+            "clearIf": "Selge",
+            "sourceIf": "Allikas",
+            "versionIf": "Versioon",
+            "aboutIf": "Umbes",
+            "selectIf": "Valige",
+            "countryIf": "Riigid",
+            "languageIf": "Keeled",
+            "catagoryIf": "Kategooria"
         },
         {
             "url": "src/assets/images/comprehensive.svg",
             "target": "routes/comprehensive",
             "reveal": "",
-            "message": "Unesi",
-            "infos": "Gledajte filmove, serije, animacije ..."
+            "message": "Sisenema",
+            "infos": "Vaadake filme, sarju, animesid ..."
         },
         {
             "url": "src/assets/images/radio.svg",
             "target": "#popupbox",
             "reveal": "chooseitem",
-            "message": "Unesi",
-            "infos": "Slušajte 28 000+ radio stanica ..."
+            "message": "Sisenema",
+            "infos": "Kuulake üle 28 000 raadiojaama ..."
         },
         {
             "url": "src/assets/images/reading.svg",
             "target": "routes/novel",
             "reveal": "",
-            "message": "Unesi",
-            "infos": "Čitanje više od 100 000+ knjiga ..."
+            "message": "Sisenema",
+            "infos": "Rohkem kui 100 000 raamatu lugemine ..."
         },
         {
             "url": "src/assets/images/manga.svg",
             "target": "routes/manga",
             "reveal": "",
-            "message": "Unesi",
-            "infos": "Čitanje puno manga knjiga ..."
+            "message": "Sisenema",
+            "infos": "Paljude mangaraamatute lugemine ..."
         },
         {
             "url": "src/assets/images/music.svg",
             "target": "routes/music",
             "reveal": "",
-            "message": "Unesi",
-            "infos": "Slušajte glazbu svijeta ..."
+            "message": "Sisenema",
+            "infos": "Kuulake maailma muusikat ..."
         },
         {
             "url": "src/assets/images/game.svg",
             "target": "routes/game",
             "reveal": "",
-            "message": "Unesi",
-            "infos": "Konstruira se do verzije 9.0.0"
+            "message": "Sisenema",
+            "infos": "Ehitamine kuni versioonini 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
             "target": "routes/adult",
             "reveal": "",
-            "message": "Unesi",
-            "infos": "Video pornografija ..."
+            "message": "Sisenema",
+            "infos": "Videoporno ..."
         }
     ],
-    "cs": [
+    "fil": [
         {
             "url": "src/assets/images/tv.svg",
             "target": "#popupbox",
             "reveal": "chooseitem",
-            "message": "Vstupte",
-            "infos": "Sledujte více než 6000 televizních kanálů ...",
-            "switchIf": "Citlivý obsah",
-            "langIf": "Jazyky",
-            "clearIf": "Průhledná",
-            "sourceIf": "Zdroj",
-            "versionIf": "Verze",
-            "aboutIf": "O",
-            "selectIf": "Vybrat",
-            "countryIf": "Země",
-            "languageIf": "Jazyky",
+            "message": "Pasok",
+            "infos": "Manood ng 6000+ Mga Channel sa TV ...",
+            "switchIf": "Sensitibong Nilalaman",
+            "langIf": "Mga Wika",
+            "clearIf": "Malinaw",
+            "sourceIf": "Pinagmulan",
+            "versionIf": "Bersyon",
+            "aboutIf": "Tungkol sa",
+            "selectIf": "Pumili",
+            "countryIf": "Mga Bansa",
+            "languageIf": "Mga Wika",
+            "catagoryIf": "Kategoryang"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Pasok",
+            "infos": "Manood ng Pelikula, Serye, Anime ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Pasok",
+            "infos": "Makinig sa 28000+ Mga Istasyon ng Radyo ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Pasok",
+            "infos": "Nagbabasa Nang Higit Pa sa 100000+ Mga Aklat ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Pasok",
+            "infos": "Nagbabasa ng Maraming Mga Libro ng Manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Pasok",
+            "infos": "Makinig sa The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Pasok",
+            "infos": "Ang paggawa hanggang sa bersyon 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Pasok",
+            "infos": "Video porn ..."
+        }
+    ],
+    "fi": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Tulla sisään",
+            "infos": "Katso yli 6000 TV -kanavaa ...",
+            "switchIf": "Arkaluonteinen sisältö",
+            "langIf": "Kielet",
+            "clearIf": "Asia selvä",
+            "sourceIf": "Lähde",
+            "versionIf": "Versio",
+            "aboutIf": "Noin",
+            "selectIf": "Valitse",
+            "countryIf": "Maat",
+            "languageIf": "Kielet",
+            "catagoryIf": "Kategoria"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Tulla sisään",
+            "infos": "Katso elokuvia, sarjoja, animeja ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Tulla sisään",
+            "infos": "Kuuntele 28000+ radioasemaa ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Tulla sisään",
+            "infos": "Yli 100 000 kirjan lukeminen ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Tulla sisään",
+            "infos": "Lukemassa paljon manga -kirjoja ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Tulla sisään",
+            "infos": "Kuuntele maailmanmusiikkia ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Tulla sisään",
+            "infos": "Rakennetaan versioon 9.0.0 asti"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Tulla sisään",
+            "infos": "Video porno ..."
+        }
+    ],
+    "fr": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entrer",
+            "infos": "Regardez plus de 6000 chaînes de télévision...",
+            "switchIf": "Contenu sensible",
+            "langIf": "Langages",
+            "clearIf": "dégager",
+            "sourceIf": "La source",
+            "versionIf": "Version",
+            "aboutIf": "Sur",
+            "selectIf": "Sélectionner",
+            "countryIf": "Des pays",
+            "languageIf": "Langages",
+            "catagoryIf": "Catégorie"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Regardez des films, séries, animes..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entrer",
+            "infos": "Écoutez plus de 28 000 stations de radio..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Lire plus de 100000+ livres..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Lire beaucoup de mangas..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Écoutez la musique du monde..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Construire jusqu'à la version 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Vidéos porno..."
+        }
+    ],
+    "fr-CA": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entrer",
+            "infos": "Regardez plus de 6000 chaînes de télévision...",
+            "switchIf": "Contenu sensible",
+            "langIf": "Langages",
+            "clearIf": "dégager",
+            "sourceIf": "La source",
+            "versionIf": "Version",
+            "aboutIf": "Sur",
+            "selectIf": "Sélectionner",
+            "countryIf": "Des pays",
+            "languageIf": "Langages",
+            "catagoryIf": "Catégorie"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Regardez des films, séries, animes..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entrer",
+            "infos": "Écoutez plus de 28 000 stations de radio..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Lire plus de 100000+ livres..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Lire beaucoup de mangas..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Écoutez la musique du monde..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Construire jusqu'à la version 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Vidéos porno..."
+        }
+    ],
+    "fr-FR": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entrer",
+            "infos": "Regardez plus de 6000 chaînes de télévision...",
+            "switchIf": "Contenu sensible",
+            "langIf": "Langages",
+            "clearIf": "dégager",
+            "sourceIf": "La source",
+            "versionIf": "Version",
+            "aboutIf": "Sur",
+            "selectIf": "Sélectionner",
+            "countryIf": "Des pays",
+            "languageIf": "Langages",
+            "catagoryIf": "Catégorie"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Regardez des films, séries, animes..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entrer",
+            "infos": "Écoutez plus de 28 000 stations de radio..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Lire plus de 100000+ livres..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Lire beaucoup de mangas..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Écoutez la musique du monde..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Construire jusqu'à la version 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Vidéos porno..."
+        }
+    ],
+    "fr-CH": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entrer",
+            "infos": "Regardez plus de 6000 chaînes de télévision...",
+            "switchIf": "Contenu sensible",
+            "langIf": "Langages",
+            "clearIf": "dégager",
+            "sourceIf": "La source",
+            "versionIf": "Version",
+            "aboutIf": "Sur",
+            "selectIf": "Sélectionner",
+            "countryIf": "Des pays",
+            "languageIf": "Langages",
+            "catagoryIf": "Catégorie"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Regardez des films, séries, animes..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entrer",
+            "infos": "Écoutez plus de 28 000 stations de radio..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Lire plus de 100000+ livres..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Lire beaucoup de mangas..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Écoutez la musique du monde..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Construire jusqu'à la version 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Entrer",
+            "infos": "Vidéos porno..."
+        }
+    ],
+    "gl": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entra",
+            "infos": "Ver máis de 6000 canles de TV ...",
+            "switchIf": "Contido sensible",
+            "langIf": "Idiomas",
+            "clearIf": "Claro",
+            "sourceIf": "Fonte",
+            "versionIf": "Versión",
+            "aboutIf": "Acerca de",
+            "selectIf": "Selecciona",
+            "countryIf": "Países",
+            "languageIf": "Idiomas",
+            "catagoryIf": "Categoría"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Entra",
+            "infos": "Ver películas, series, Animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Entra",
+            "infos": "Escoita máis de 28000 emisoras de radio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Entra",
+            "infos": "Ler máis de máis de 100.000 libros ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Entra",
+            "infos": "Lendo moitos libros Manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Entra",
+            "infos": "Escoita The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Entra",
+            "infos": "Construíndo ata a versión 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Entra",
+            "infos": "Video porno ..."
+        }
+    ],
+    "ka": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "შეიყვანეთ",
+            "infos": "უყურეთ 6000+ სატელევიზიო არხს ...",
+            "switchIf": "მგრძნობიარე შინაარსი",
+            "langIf": "ენები",
+            "clearIf": "ნათელია",
+            "sourceIf": "წყარო",
+            "versionIf": "ვერსია",
+            "aboutIf": "შესახებ",
+            "selectIf": "აირჩიეთ",
+            "countryIf": "პაესები",
+            "languageIf": "ენები",
+            "catagoryIf": "კატეგორია"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "შეიყვანეთ",
+            "infos": "უყურეთ ფილმებს, სერიალებს, ანიმეებს ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "შეიყვანეთ",
+            "infos": "მოუსმინეთ 28000+ რადიოსადგურს ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "შეიყვანეთ",
+            "infos": "კითხულობს 100000 -ზე მეტ წიგნს ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "შეიყვანეთ",
+            "infos": "მანგას ბევრი წიგნის კითხვა ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "შეიყვანეთ",
+            "infos": "მოუსმინეთ მსოფლიო მუსიკას ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "შეიყვანეთ",
+            "infos": "მშენებლობა ვერსიამდე 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "შეიყვანეთ",
+            "infos": "ვიდეო პორნო ..."
+        }
+    ],
+    "de": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Eintreten",
+            "infos": "Mehr als 6000 TV-Kanäle ansehen...",
+            "switchIf": "Sensible Inhalte",
+            "langIf": "Sprachen",
+            "clearIf": "klar",
+            "sourceIf": "Quelle",
+            "versionIf": "Ausführung",
+            "aboutIf": "Über",
+            "selectIf": "Auswählen",
+            "countryIf": "Land",
+            "languageIf": "Sprachen",
             "catagoryIf": "Kategorie"
         },
         {
             "url": "src/assets/images/comprehensive.svg",
             "target": "routes/comprehensive",
             "reveal": "",
-            "message": "Vstupte",
-            "infos": "Sledujte filmy, seriály, anime ..."
+            "message": "Eintreten",
+            "infos": "Filme, Serien, Animes ansehen..."
         },
         {
             "url": "src/assets/images/radio.svg",
             "target": "#popupbox",
             "reveal": "chooseitem",
-            "message": "Vstupte",
-            "infos": "Poslouchejte 28 000+ rozhlasových stanic ..."
+            "message": "Eintreten",
+            "infos": "Mehr als 28000 Radiosender anhören..."
         },
         {
             "url": "src/assets/images/reading.svg",
             "target": "routes/novel",
             "reveal": "",
-            "message": "Vstupte",
-            "infos": "Čtení více než 100 000+ knih ..."
+            "message": "Eintreten",
+            "infos": "Mehr als 100.000+ Bücher lesen..."
         },
         {
             "url": "src/assets/images/manga.svg",
             "target": "routes/manga",
             "reveal": "",
-            "message": "Vstupte",
-            "infos": "Čtení spousty knih o mangách ..."
+            "message": "Eintreten",
+            "infos": "Viele Manga-Bücher lesen..."
         },
         {
             "url": "src/assets/images/music.svg",
             "target": "routes/music",
             "reveal": "",
-            "message": "Vstupte",
-            "infos": "Poslechněte si The World Music ..."
+            "message": "Eintreten",
+            "infos": "Weltmusik hören..."
         },
         {
             "url": "src/assets/images/game.svg",
             "target": "routes/game",
             "reveal": "",
-            "message": "Vstupte",
-            "infos": "Konstrukce do verze 9.0.0"
+            "message": "Eintreten",
+            "infos": "Konstruieren bis Version 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
             "target": "routes/adult",
             "reveal": "",
-            "message": "Vstupte",
-            "infos": "Video porno ..."
+            "message": "Eintreten",
+            "infos": "Pornovideos..."
         }
     ],
-    "da": [
+    "de-AT": [
         {
             "url": "src/assets/images/tv.svg",
             "target": "#popupbox",
             "reveal": "chooseitem",
-            "message": "Gå ind",
-            "infos": "Se 6000+ tv -kanaler ...",
-            "switchIf": "Følsomt indhold",
-            "langIf": "Sprog",
+            "message": "Eintreten",
+            "infos": "Mehr als 6000 TV-Kanäle ansehen...",
+            "switchIf": "Sensible Inhalte",
+            "langIf": "Sprachen",
             "clearIf": "klar",
-            "sourceIf": "Kilde",
-            "versionIf": "Version",
-            "aboutIf": "Om",
-            "selectIf": "Vælg",
-            "countryIf": "Lande",
-            "languageIf": "Sprog",
-            "catagoryIf": "Kategori"
+            "sourceIf": "Quelle",
+            "versionIf": "Ausführung",
+            "aboutIf": "Über",
+            "selectIf": "Auswählen",
+            "countryIf": "Land",
+            "languageIf": "Sprachen",
+            "catagoryIf": "Kategorie"
         },
         {
             "url": "src/assets/images/comprehensive.svg",
             "target": "routes/comprehensive",
             "reveal": "",
-            "message": "Gå ind",
-            "infos": "Se film, serier, anime ..."
+            "message": "Eintreten",
+            "infos": "Filme, Serien, Animes ansehen..."
         },
         {
             "url": "src/assets/images/radio.svg",
             "target": "#popupbox",
             "reveal": "chooseitem",
-            "message": "Gå ind",
-            "infos": "Lyt til 28000+ radiostationer ..."
+            "message": "Eintreten",
+            "infos": "Mehr als 28000 Radiosender anhören..."
         },
         {
             "url": "src/assets/images/reading.svg",
             "target": "routes/novel",
             "reveal": "",
-            "message": "Gå ind",
-            "infos": "Læser mere end 100000+ bøger ..."
+            "message": "Eintreten",
+            "infos": "Mehr als 100.000+ Bücher lesen..."
         },
         {
             "url": "src/assets/images/manga.svg",
             "target": "routes/manga",
             "reveal": "",
-            "message": "Gå ind",
-            "infos": "Læser masser af mangabøger ..."
+            "message": "Eintreten",
+            "infos": "Viele Manga-Bücher lesen..."
         },
         {
             "url": "src/assets/images/music.svg",
             "target": "routes/music",
             "reveal": "",
-            "message": "Gå ind",
-            "infos": "Lyt til The World Music ..."
+            "message": "Eintreten",
+            "infos": "Weltmusik hören..."
         },
         {
             "url": "src/assets/images/game.svg",
             "target": "routes/game",
             "reveal": "",
-            "message": "Gå ind",
-            "infos": "Konstruerer indtil version 9.0.0"
+            "message": "Eintreten",
+            "infos": "Konstruieren bis Version 9.0.0"
         },
         {
             "url": "src/assets/images/sex.svg",
             "target": "routes/adult",
             "reveal": "",
-            "message": "Gå ind",
-            "infos": "Videoporno ..."
+            "message": "Eintreten",
+            "infos": "Pornovideos..."
+        }
+    ],
+    "de-DE": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Eintreten",
+            "infos": "Mehr als 6000 TV-Kanäle ansehen...",
+            "switchIf": "Sensible Inhalte",
+            "langIf": "Sprachen",
+            "clearIf": "klar",
+            "sourceIf": "Quelle",
+            "versionIf": "Ausführung",
+            "aboutIf": "Über",
+            "selectIf": "Auswählen",
+            "countryIf": "Land",
+            "languageIf": "Sprachen",
+            "catagoryIf": "Kategorie"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Filme, Serien, Animes ansehen..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Eintreten",
+            "infos": "Mehr als 28000 Radiosender anhören..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Mehr als 100.000+ Bücher lesen..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Viele Manga-Bücher lesen..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Weltmusik hören..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Konstruieren bis Version 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Pornovideos..."
+        }
+    ],
+    "de-LI": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Eintreten",
+            "infos": "Mehr als 6000 TV-Kanäle ansehen...",
+            "switchIf": "Sensible Inhalte",
+            "langIf": "Sprachen",
+            "clearIf": "klar",
+            "sourceIf": "Quelle",
+            "versionIf": "Ausführung",
+            "aboutIf": "Über",
+            "selectIf": "Auswählen",
+            "countryIf": "Land",
+            "languageIf": "Sprachen",
+            "catagoryIf": "Kategorie"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Filme, Serien, Animes ansehen..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Eintreten",
+            "infos": "Mehr als 28000 Radiosender anhören..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Mehr als 100.000+ Bücher lesen..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Viele Manga-Bücher lesen..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Weltmusik hören..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Konstruieren bis Version 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Pornovideos..."
+        }
+    ],
+    "de-CH": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Eintreten",
+            "infos": "Mehr als 6000 TV-Kanäle ansehen...",
+            "switchIf": "Sensible Inhalte",
+            "langIf": "Sprachen",
+            "clearIf": "klar",
+            "sourceIf": "Quelle",
+            "versionIf": "Ausführung",
+            "aboutIf": "Über",
+            "selectIf": "Auswählen",
+            "countryIf": "Land",
+            "languageIf": "Sprachen",
+            "catagoryIf": "Kategorie"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Filme, Serien, Animes ansehen..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Eintreten",
+            "infos": "Mehr als 28000 Radiosender anhören..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Mehr als 100.000+ Bücher lesen..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Viele Manga-Bücher lesen..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Weltmusik hören..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Konstruieren bis Version 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Eintreten",
+            "infos": "Pornovideos..."
+        }
+    ],
+    "el": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Εισαγω",
+            "infos": "Παρακολουθήστε 6000+ τηλεοπτικά κανάλια ...",
+            "switchIf": "Ευαίσθητο Περιεχόμενο",
+            "langIf": "Γλώσσες",
+            "clearIf": "Σαφή",
+            "sourceIf": "Πηγή",
+            "versionIf": "Εκδοχή",
+            "aboutIf": "Σχετικά με",
+            "selectIf": "Επιλέγω",
+            "countryIf": "Χώρες",
+            "languageIf": "Γλώσσες",
+            "catagoryIf": "Κατηγορία"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Εισαγω",
+            "infos": "Παρακολουθήστε ταινίες, σειρές, animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Εισαγω",
+            "infos": "Ακούστε 28000+ ραδιοφωνικούς σταθμούς ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Εισαγω",
+            "infos": "Διαβάζοντας περισσότερα από 100000+ βιβλία ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Εισαγω",
+            "infos": "Διαβάζοντας πολλά βιβλία Manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Εισαγω",
+            "infos": "Ακούστε την Παγκόσμια Μουσική ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Εισαγω",
+            "infos": "Κατασκευή έως την έκδοση 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Εισαγω",
+            "infos": "Βίντεο πορνό ..."
+        }
+    ],
+    "gu": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "દાખલ કરો",
+            "infos": "6000+ ટીવી ચેનલો જુઓ ...",
+            "switchIf": "સંવેદનશીલ સામગ્રી",
+            "langIf": "ભાષાઓ",
+            "clearIf": "ચોખ્ખુ",
+            "sourceIf": "સ્ત્રોત",
+            "versionIf": "આવૃત્તિ",
+            "aboutIf": "વિશે",
+            "selectIf": "પસંદ કરો",
+            "countryIf": "દેશો",
+            "languageIf": "ભાષાઓ",
+            "catagoryIf": "શ્રેણી"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "દાખલ કરો",
+            "infos": "મૂવીઝ, સિરીઝ, એનાઇમ્સ જુઓ ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "દાખલ કરો",
+            "infos": "28000+ રેડિયો સ્ટેશન સાંભળો ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "દાખલ કરો",
+            "infos": "100000 થી વધુ પુસ્તકો વાંચવા ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "દાખલ કરો",
+            "infos": "ઘણાં મંગા પુસ્તકો વાંચવા ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "દાખલ કરો",
+            "infos": "વિશ્વ સંગીત સાંભળો ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "દાખલ કરો",
+            "infos": "સંસ્કરણ 9.0.0 સુધી રચના"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "દાખલ કરો",
+            "infos": "વિડિઓ પોર્ન ..."
+        }
+    ],
+    "ha": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Shigar",
+            "infos": "Kalli tashoshin TV sama da 6000+ ...",
+            "switchIf": "Abun ciki Mai Sahihi",
+            "langIf": "Harsuna",
+            "clearIf": "Bayyana",
+            "sourceIf": "Source",
+            "versionIf": "Sigar",
+            "aboutIf": "Game da",
+            "selectIf": "Zaɓi",
+            "countryIf": "Kasashe",
+            "languageIf": "Harsuna",
+            "catagoryIf": "Nau'i"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Shigar",
+            "infos": "Kalli Fina -finai, Jerin, Anime ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Shigar",
+            "infos": "Saurari tashoshin Rediyo 28000+ ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Shigar",
+            "infos": "Karatun Littattafai Sama da 100000+ ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Shigar",
+            "infos": "Karatun Littattafan Manga da yawa ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Shigar",
+            "infos": "Saurari Wakar Duniya ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Shigar",
+            "infos": "Gina har zuwa sigar 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Shigar",
+            "infos": "Bidiyon bidiyo ..."
+        }
+    ],
+    "it": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "accedere",
+            "infos": "Guarda oltre 6000 canali TV...",
+            "switchIf": "Contenuti sensibili",
+            "langIf": "Le lingue",
+            "clearIf": "chiara",
+            "sourceIf": "Fonte",
+            "versionIf": "Versione",
+            "aboutIf": "Di",
+            "selectIf": "Selezionare",
+            "countryIf": "Paesi",
+            "languageIf": "Le lingue",
+            "catagoryIf": "Categoria"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Guarda film, serie, anime..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "accedere",
+            "infos": "Ascolta più di 28000 stazioni radio..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Leggendo più di 100000+ libri..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Leggendo molti libri di manga..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Ascolta The World Music..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Costruzione fino alla versione 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Video porno..."
+        }
+    ],
+    "it-IT": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "accedere",
+            "infos": "Guarda oltre 6000 canali TV...",
+            "switchIf": "Contenuti sensibili",
+            "langIf": "Le lingue",
+            "clearIf": "chiara",
+            "sourceIf": "Fonte",
+            "versionIf": "Versione",
+            "aboutIf": "Di",
+            "selectIf": "Selezionare",
+            "countryIf": "Paesi",
+            "languageIf": "Le lingue",
+            "catagoryIf": "Categoria"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Guarda film, serie, anime..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "accedere",
+            "infos": "Ascolta più di 28000 stazioni radio..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Leggendo più di 100000+ libri..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Leggendo molti libri di manga..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Ascolta The World Music..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Costruzione fino alla versione 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Video porno..."
+        }
+    ],
+    "it-CH": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "accedere",
+            "infos": "Guarda oltre 6000 canali TV...",
+            "switchIf": "Contenuti sensibili",
+            "langIf": "Le lingue",
+            "clearIf": "chiara",
+            "sourceIf": "Fonte",
+            "versionIf": "Versione",
+            "aboutIf": "Di",
+            "selectIf": "Selezionare",
+            "countryIf": "Paesi",
+            "languageIf": "Le lingue",
+            "catagoryIf": "Categoria"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Guarda film, serie, anime..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "accedere",
+            "infos": "Ascolta più di 28000 stazioni radio..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Leggendo più di 100000+ libri..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Leggendo molti libri di manga..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Ascolta The World Music..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Costruzione fino alla versione 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "accedere",
+            "infos": "Video porno..."
+        }
+    ],
+    "ja": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "入力",
+            "infos": "6000以上のテレビチャンネルを見る...",
+            "switchIf": "デリケートなコンテンツ",
+            "langIf": "言語",
+            "clearIf": "クリア",
+            "sourceIf": "ソース",
+            "versionIf": "バージョン",
+            "aboutIf": "だいたい",
+            "selectIf": "選択する",
+            "countryIf": "国",
+            "languageIf": "言語",
+            "catagoryIf": "カテゴリー"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "入力",
+            "infos": "映画、シリーズ、アニメを見る..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "入力",
+            "infos": "28000以上のラジオ局を聞く..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "入力",
+            "infos": "100000冊以上の本を読む..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "入力",
+            "infos": "たくさんのマンガ本を読んで..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "入力",
+            "infos": "ワールドミュージックを聴く..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "入力",
+            "infos": "バージョン9.0.0まで構築中"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "入力",
+            "infos": "ポルノビデオ..."
+        }
+    ],
+    "ko": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "입력하다",
+            "infos": "6000개 이상의 TV 채널 시청...",
+            "switchIf": "범주",
+            "langIf": "언어",
+            "clearIf": "분명한",
+            "sourceIf": "원천",
+            "versionIf": "버전",
+            "aboutIf": "에 대한",
+            "selectIf": "선택하다",
+            "countryIf": "국가",
+            "languageIf": "언어",
+            "catagoryIf": "श्रेणी"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "입력하다",
+            "infos": "영화, 시리즈, 애니메이션 감상..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "입력하다",
+            "infos": "28000개 이상의 라디오 방송국 듣기..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "입력하다",
+            "infos": "100000권 이상의 책 읽기..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "입력하다",
+            "infos": "만화책 많이 읽고..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "입력하다",
+            "infos": "월드뮤직을 듣다..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "입력하다",
+            "infos": "버전 9.0.0까지 구축 중"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "입력하다",
+            "infos": "포르노 비디오..."
+        }
+    ],
+    "pt": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Digitar",
+            "infos": "Assistir mais de 6.000 canais de TV ...",
+            "switchIf": "Conteúdo Sensível",
+            "langIf": "línguas",
+            "clearIf": "claro",
+            "sourceIf": "Fonte",
+            "versionIf": "Versão",
+            "aboutIf": "Cerca de",
+            "selectIf": "Selecione",
+            "countryIf": "Países",
+            "languageIf": "línguas",
+            "catagoryIf": "Categoria"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Assistir filmes, séries, animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Digitar",
+            "infos": "Ouça mais de 28.000 estações de rádio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Lendo mais de 100.000 livros ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Lendo muitos livros de mangá ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Ouça The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Construindo até a versão 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Vídeos pornôs ..."
+        }
+    ],
+    "pt-BR": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Digitar",
+            "infos": "Assistir mais de 6.000 canais de TV ...",
+            "switchIf": "Conteúdo Sensível",
+            "langIf": "línguas",
+            "clearIf": "claro",
+            "sourceIf": "Fonte",
+            "versionIf": "Versão",
+            "aboutIf": "Cerca de",
+            "selectIf": "Selecione",
+            "countryIf": "Países",
+            "languageIf": "línguas",
+            "catagoryIf": "Categoria"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Assistir filmes, séries, animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Digitar",
+            "infos": "Ouça mais de 28.000 estações de rádio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Lendo mais de 100.000 livros ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Lendo muitos livros de mangá ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Ouça The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Construindo até a versão 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Vídeos pornôs ..."
+        }
+    ],
+    "pt-PT": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Digitar",
+            "infos": "Assistir mais de 6.000 canais de TV ...",
+            "switchIf": "Conteúdo Sensível",
+            "langIf": "línguas",
+            "clearIf": "claro",
+            "sourceIf": "Fonte",
+            "versionIf": "Versão",
+            "aboutIf": "Cerca de",
+            "selectIf": "Selecione",
+            "countryIf": "Países",
+            "languageIf": "línguas",
+            "catagoryIf": "Categoria"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Assistir filmes, séries, animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Digitar",
+            "infos": "Ouça mais de 28.000 estações de rádio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Lendo mais de 100.000 livros ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Lendo muitos livros de mangá ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Ouça The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Construindo até a versão 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Digitar",
+            "infos": "Vídeos pornôs ..."
+        }
+    ],
+    "es": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ingresar",
+            "infos": "Mira más de 6000 canales de televisión ...",
+            "switchIf": "Contenido sensible",
+            "langIf": "Idiomas",
+            "clearIf": "claro",
+            "sourceIf": "Fuente",
+            "versionIf": "Versión",
+            "aboutIf": "Sobre",
+            "selectIf": "Seleccione",
+            "countryIf": "Países",
+            "languageIf": "Idiomas",
+            "catagoryIf": "Categoría"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Ver películas, series, animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ingresar",
+            "infos": "Escuche más de 28000 estaciones de radio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Leyendo más de 100000+ libros ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Leyendo muchos libros de manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Escuche The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Construyendo hasta la versión 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Vídeos porno ..."
+        }
+    ],
+    "es-AR":  [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ingresar",
+            "infos": "Mira más de 6000 canales de televisión ...",
+            "switchIf": "Contenido sensible",
+            "langIf": "Idiomas",
+            "clearIf": "claro",
+            "sourceIf": "Fuente",
+            "versionIf": "Versión",
+            "aboutIf": "Sobre",
+            "selectIf": "Seleccione",
+            "countryIf": "Países",
+            "languageIf": "Idiomas",
+            "catagoryIf": "Categoría"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Ver películas, series, animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ingresar",
+            "infos": "Escuche más de 28000 estaciones de radio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Leyendo más de 100000+ libros ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Leyendo muchos libros de manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Escuche The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Construyendo hasta la versión 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Vídeos porno ..."
+        }
+    ],
+    "es-419":  [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ingresar",
+            "infos": "Mira más de 6000 canales de televisión ...",
+            "switchIf": "Contenido sensible",
+            "langIf": "Idiomas",
+            "clearIf": "claro",
+            "sourceIf": "Fuente",
+            "versionIf": "Versión",
+            "aboutIf": "Sobre",
+            "selectIf": "Seleccione",
+            "countryIf": "Países",
+            "languageIf": "Idiomas",
+            "catagoryIf": "Categoría"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Ver películas, series, animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ingresar",
+            "infos": "Escuche más de 28000 estaciones de radio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Leyendo más de 100000+ libros ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Leyendo muchos libros de manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Escuche The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Construyendo hasta la versión 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Vídeos porno ..."
+        }
+    ],
+    "es-MX":  [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ingresar",
+            "infos": "Mira más de 6000 canales de televisión ...",
+            "switchIf": "Contenido sensible",
+            "langIf": "Idiomas",
+            "clearIf": "claro",
+            "sourceIf": "Fuente",
+            "versionIf": "Versión",
+            "aboutIf": "Sobre",
+            "selectIf": "Seleccione",
+            "countryIf": "Países",
+            "languageIf": "Idiomas",
+            "catagoryIf": "Categoría"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Ver películas, series, animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ingresar",
+            "infos": "Escuche más de 28000 estaciones de radio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Leyendo más de 100000+ libros ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Leyendo muchos libros de manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Escuche The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Construyendo hasta la versión 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Vídeos porno ..."
+        }
+    ],
+    "es-ES":  [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ingresar",
+            "infos": "Mira más de 6000 canales de televisión ...",
+            "switchIf": "Contenido sensible",
+            "langIf": "Idiomas",
+            "clearIf": "claro",
+            "sourceIf": "Fuente",
+            "versionIf": "Versión",
+            "aboutIf": "Sobre",
+            "selectIf": "Seleccione",
+            "countryIf": "Países",
+            "languageIf": "Idiomas",
+            "catagoryIf": "Categoría"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Ver películas, series, animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ingresar",
+            "infos": "Escuche más de 28000 estaciones de radio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Leyendo más de 100000+ libros ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Leyendo muchos libros de manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Escuche The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Construyendo hasta la versión 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Vídeos porno ..."
+        }
+    ],
+    "es-US":  [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ingresar",
+            "infos": "Mira más de 6000 canales de televisión ...",
+            "switchIf": "Contenido sensible",
+            "langIf": "Idiomas",
+            "clearIf": "claro",
+            "sourceIf": "Fuente",
+            "versionIf": "Versión",
+            "aboutIf": "Sobre",
+            "selectIf": "Seleccione",
+            "countryIf": "Países",
+            "languageIf": "Idiomas",
+            "catagoryIf": "Categoría"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Ver películas, series, animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ingresar",
+            "infos": "Escuche más de 28000 estaciones de radio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Leyendo más de 100000+ libros ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Leyendo muchos libros de manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Escuche The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Construyendo hasta la versión 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Ingresar",
+            "infos": "Vídeos porno ..."
+        }
+    ],
+    "uz": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Kirish",
+            "infos": "6000 dan ortiq telekanallarni tomosha qiling ...",
+            "switchIf": "Nozik tarkib",
+            "langIf": "Tillar",
+            "clearIf": "Ochiq",
+            "sourceIf": "Manba",
+            "versionIf": "Versiya",
+            "aboutIf": "Haqida",
+            "selectIf": "Tanlang",
+            "countryIf": "Mamlakatlar",
+            "languageIf": "Tillar",
+            "catagoryIf": "Turkum"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Kirish",
+            "infos": "Filmlarni, seriallarni, animatsiyalarni tomosha qiling ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Kirish",
+            "infos": "28000 dan ortiq radiostansiyalarni tinglang ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Kirish",
+            "infos": "100000 dan ortiq kitob o'qish ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Kirish",
+            "infos": "Manga kitoblarini ko'p o'qish ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Kirish",
+            "infos": "Dunyo musiqasini tinglang ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Kirish",
+            "infos": "9.0.0 versiyasiga qadar qurish"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Kirish",
+            "infos": "Video porno.."
+        }
+    ],
+    "vi": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Vào",
+            "infos": "Xem hơn 6000 kênh TV ...",
+            "switchIf": "Nội dung nhạy cảm",
+            "langIf": "Ieithoedd",
+            "clearIf": "Clir",
+            "sourceIf": "Ffynhonnell",
+            "versionIf": "Fersiwn",
+            "aboutIf": "Am",
+            "selectIf": "Lựa chọn",
+            "countryIf": "Quốc gia",
+            "languageIf": "Ngôn ngữ",
+            "catagoryIf": "Loại"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Vào",
+            "infos": "Xem Phim, Bộ, Animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Vào",
+            "infos": "Nghe hơn 28000 đài phát thanh ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Vào",
+            "infos": "Đọc Hơn 100000+ Sách ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Vào",
+            "infos": "Đọc Nhiều Sách Manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Vào",
+            "infos": "Nghe nhạc thế giới ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Vào",
+            "infos": "Đang xây dựng cho đến phiên bản 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Vào",
+            "infos": "Video khiêu dâm ..."
+        }
+    ],
+    "cy": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Rhowch i mewn",
+            "infos": "Gwyliwch 6000+ o Sianeli Teledu ...",
+            "switchIf": "Cynnwys Sensitif",
+            "langIf": "Ieithoedd",
+            "clearIf": "Clir",
+            "sourceIf": "Ffynhonnell",
+            "versionIf": "Fersiwn",
+            "aboutIf": "Am",
+            "selectIf": "Dewiswch",
+            "countryIf": "Gwledydd",
+            "languageIf": "Ieithoedd",
+            "catagoryIf": "Categori"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Rhowch i mewn",
+            "infos": "Gwylio Ffilmiau, Cyfres, Animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Rhowch i mewn",
+            "infos": "Gwrandewch 28000+ o Orsafoedd Radio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Rhowch i mewn",
+            "infos": "Darllen Mwy na 100000+ o Lyfrau ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Rhowch i mewn",
+            "infos": "Darllen Llawer o Lyfrau Manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Rhowch i mewn",
+            "infos": "Gwrandewch ar The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Rhowch i mewn",
+            "infos": "Adeiladu tan fersiwn 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Rhowch i mewn",
+            "infos": "Porn fideo ..."
+        }
+    ],
+    "fy": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Yngean",
+            "infos": "Sjoch 6000+ TV -kanalen ...",
+            "switchIf": "Sensitive Ynhâld",
+            "langIf": "Talen",
+            "clearIf": "Opklearje",
+            "sourceIf": "Boarne",
+            "versionIf": "Ferzje",
+            "aboutIf": "Oer",
+            "selectIf": "Útkieze",
+            "countryIf": "Lannen",
+            "languageIf": "Talen",
+            "catagoryIf": "Kategory"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Yngean",
+            "infos": "Sjoch films, searjes, anime ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Yngean",
+            "infos": "Harkje nei 28000+ radiostasjons ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Yngean",
+            "infos": "Mear lêze dan 100000+ boeken ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Yngean",
+            "infos": "In protte mangaboeken lêze ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Yngean",
+            "infos": "Harkje nei The World Music ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Yngean",
+            "infos": "Konstruearje oant ferzje 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Yngean",
+            "infos": "Fideoporno ..."
+        }
+    ],
+    "xh": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ngena",
+            "infos": "Bukela amajelo e-TV angama-6000 + ...",
+            "switchIf": "Umxholo onovakalelo",
+            "langIf": "Iilwimi",
+            "clearIf": "Kucacile",
+            "sourceIf": "Imvelaphi",
+            "versionIf": "Inguqulelo",
+            "aboutIf": "Malunga",
+            "selectIf": "Khetha",
+            "countryIf": "Amazwe",
+            "languageIf": "Iilwimi",
+            "catagoryIf": "Udidi"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Ngena",
+            "infos": "Bukela iiMuvi, uthotho, iiAnimes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Ngena",
+            "infos": "Mamela iZitishi zeRadiyo ezingama-28000 + ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Ngena",
+            "infos": "Ukufunda ngaphezulu kweencwadi ezili-100000 + ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Ngena",
+            "infos": "Ukufunda iincwadi ezininzi zeManga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Ngena",
+            "infos": "Mamela uMculo weHlabathi ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Ngena",
+            "infos": "Ukwakha kude kube yinguqulelo 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Ngena",
+            "infos": "Ividiyo ye-porn ..."
+        }
+    ],
+    "yi": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "אַרייַן",
+            "infos": "וואַך 6000+ טעלעוויזיע טשאַנאַלז ...",
+            "switchIf": "סענסיטיווע אינהאַלט",
+            "langIf": "שפראכן",
+            "clearIf": "קלאָר",
+            "sourceIf": "מקור",
+            "versionIf": "ווערסיע",
+            "aboutIf": "וועגן",
+            "selectIf": "סעלעקטירן'",
+            "countryIf": "לענדער'",
+            "languageIf": "שפראכן'",
+            "catagoryIf": "קאַטעגאָריע'"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "אַרייַן",
+            "infos": "וואַך קינאָ, סעריע, אַנימעס ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "אַרייַן",
+            "infos": "הערן צו מער ווי 28000 ראַדיאָ סטיישאַנז ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "אַרייַן",
+            "infos": "לייענען מער ווי 100000+ ספרים ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "אַרייַן",
+            "infos": "לייענען פילע מאַנגאַ ספר ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "אַרייַן",
+            "infos": "הערן צו די וועלט מוזיק ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "אַרייַן",
+            "infos": "קאַנסטראַקטינג ביז ווערסיע 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "אַרייַן",
+            "infos": "ווידעא פּאָרן ..."
+        }
+    ],
+    "yo": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Tẹ",
+            "infos": "Wo 6000+ Awọn ikanni TV ...",
+            "switchIf": "Akoonu Ifarahan",
+            "langIf": "Awọn ede",
+            "clearIf": "Ko o",
+            "sourceIf": "Orisun",
+            "versionIf": "Ẹya",
+            "aboutIf": "Nipa",
+            "selectIf": "Yan",
+            "countryIf": "Awọn orilẹ -ede",
+            "languageIf": "Awọn ede",
+            "catagoryIf": "Ẹka"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Tẹ",
+            "infos": "Wo Awọn fiimu, jara, Animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Tẹ",
+            "infos": "Gbọ 28000+ Awọn aaye Redio ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Tẹ",
+            "infos": "Kika diẹ sii ju Awọn iwe 100000+ lọ ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Tẹ",
+            "infos": "Kika ọpọlọpọ Awọn iwe Manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Tẹ",
+            "infos": "Gbọ Orin Agbaye ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Tẹ",
+            "infos": "Ikole titi ẹya 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Tẹ",
+            "infos": "Ere onihoho fidio ..."
+        }
+    ],
+    "zu": [
+        {
+            "url": "src/assets/images/tv.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Faka",
+            "infos": "Bukela Iziteshi ze-TV ezingama-6000 + ...",
+            "switchIf": "Okuqukethwe okubucayi",
+            "langIf": "Izilimi",
+            "clearIf": "Kucacile",
+            "sourceIf": "Umthombo",
+            "versionIf": "Inguqulo",
+            "aboutIf": "Mayelana",
+            "selectIf": "Khetha",
+            "countryIf": "Amazwe",
+            "languageIf": "Izilimi",
+            "catagoryIf": "Isigaba"
+        },
+        {
+            "url": "src/assets/images/comprehensive.svg",
+            "target": "routes/comprehensive",
+            "reveal": "",
+            "message": "Faka",
+            "infos": "Bukela ama-Movie, Uchungechunge, ama-Animes ..."
+        },
+        {
+            "url": "src/assets/images/radio.svg",
+            "target": "#popupbox",
+            "reveal": "chooseitem",
+            "message": "Faka",
+            "infos": "Lalela 28000+ Iziteshi Zomsakazo ..."
+        },
+        {
+            "url": "src/assets/images/reading.svg",
+            "target": "routes/novel",
+            "reveal": "",
+            "message": "Faka",
+            "infos": "Kufundwa Izincwadi Ezingaphezu Kwezi-100000+ ..."
+        },
+        {
+            "url": "src/assets/images/manga.svg",
+            "target": "routes/manga",
+            "reveal": "",
+            "message": "Faka",
+            "infos": "Kufundwa Izincwadi Eziningi Zama-Manga ..."
+        },
+        {
+            "url": "src/assets/images/music.svg",
+            "target": "routes/music",
+            "reveal": "",
+            "message": "Faka",
+            "infos": "Lalela Umculo Womhlaba ..."
+        },
+        {
+            "url": "src/assets/images/game.svg",
+            "target": "routes/game",
+            "reveal": "",
+            "message": "Faka",
+            "infos": "Ukwakha kuze kube yinguqulo 9.0.0"
+        },
+        {
+            "url": "src/assets/images/sex.svg",
+            "target": "routes/adult",
+            "reveal": "",
+            "message": "Faka",
+            "infos": "I-porn yevidiyo ..."
         }
     ]
 }
