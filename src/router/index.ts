@@ -20,6 +20,11 @@ const router = createRouter({
       }
     },
     {
+      path: '/catalogues/counplay',
+      name: 'countryplay',
+      component: () => import('../views/Counplay.vue')
+    },
+    {
       path: '/routes/languages',
       name: 'Languages',
       component: () => import('../views/Languages.vue'),

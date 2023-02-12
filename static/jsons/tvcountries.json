@@ -1,0 +1,860 @@
+{
+  "ret": [
+    {
+      "target": "../catalogues/counplay?tab=af&title=Afghanistan",
+      "text": "Afghanistan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=al&title=Albania",
+      "text": "Albania"
+    },
+    {
+      "target": "../catalogues/counplay?tab=amh&title=Algeria",
+      "text": "Algeria"
+    },
+    {
+      "target": "../catalogues/counplay?tab=as&title=American Samoa",
+      "text": "American Samoa"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ad&title=Andorra",
+      "text": "Andorra"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ao&title=Angola",
+      "text": "Angola"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ag&title=Antigua & Barbuda",
+      "text": "Antigua & Barbuda"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ar&title=Argentina",
+      "text": "Argentina"
+    },
+    {
+      "target": "../catalogues/counplay?tab=am&title=Armenia",
+      "text": "Armenia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=aw&title=Aruba",
+      "text": "Aruba"
+    },
+    {
+      "target": "../catalogues/counplay?tab=au&title=Australia",
+      "text": "Australia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=at&title=Austria",
+      "text": "Austria"
+    },
+    {
+      "target": "../catalogues/counplay?tab=az&title=Azerbaijan",
+      "text": "Azerbaijan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=bs&title=Bahamas",
+      "text": "Bahamas"
+    },
+    {
+      "target": "../catalogues/counplay?tab=bh&title=Bahrain",
+      "text": "Bahrain"
+    },
+    {
+      "target": "../catalogues/counplay?tab=bd&title=Bangladesh",
+      "text": "Bangladesh"
+    },
+    {
+      "target": "../catalogues/counplay?tab=bb&title=Barbados",
+      "text": "Barbados"
+    },
+    {
+      "target": "../catalogues/counplay?tab=by&title=Belarus",
+      "text": "Belarus"
+    },
+    {
+      "target": "../catalogues/counplay?tab=be&title=Belgium",
+      "text": "Belgium"
+    },
+    {
+      "target": "../catalogues/counplay?tab=bj&title=Benin",
+      "text": "Benin"
+    },
+    {
+      "target": "../catalogues/counplay?tab=bt&title=Bhutan",
+      "text": "Bhutan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=bo&title=Bolivia",
+      "text": "Bolivia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ba&title=Bosnia",
+      "text": "Bosnia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=bwa&title=Botswana",
+      "text": "Botswana"
+    },
+    {
+      "target": "../catalogues/counplay?tab=br&title=Brazil",
+      "text": "Brazil"
+    },
+    {
+      "target": "../catalogues/counplay?tab=bn&title=Brunei",
+      "text": "Brunei"
+    },
+    {
+      "target": "../catalogues/counplay?tab=bg&title=Bulgaria",
+      "text": "Bulgaria"
+    },
+    {
+      "target": "../catalogues/counplay?tab=bf&title=Burkina Faso",
+      "text": "Burkina Faso"
+    },
+    {
+      "target": "../catalogues/counplay?tab=bi&title=Burundi",
+      "text": "Burundi"
+    },
+    {
+      "target": "../catalogues/counplay?tab=kh&title=Cambodia",
+      "text": "Cambodia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=cml&title=Cameroon",
+      "text": "Cameroon"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ca&title=Canada",
+      "text": "Canada"
+    },
+    {
+      "target": "../catalogues/counplay?tab=cv&title=Cape Verde",
+      "text": "Cape Verde"
+    },
+    {
+      "target": "../catalogues/counplay?tab=cf&title=Central African Republic",
+      "text": "Central African Republic"
+    },
+    {
+      "target": "../catalogues/counplay?tab=td&title=Chad",
+      "text": "Chad"
+    },
+    {
+      "target": "../catalogues/counplay?tab=cl&title=Chad",
+      "text": "Chile"
+    },
+    {
+      "target": "../catalogues/counplay?tab=cn&title=China",
+      "text": "China"
+    },
+    {
+      "target": "../catalogues/counplay?tab=co&title=Colombia",
+      "text": "Colombia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=km&title=Comoros",
+      "text": "Comoros"
+    },
+    {
+      "target": "../catalogues/counplay?tab=cg&title=Congo - Brazzaville",
+      "text": "Congo - Brazzaville"
+    },
+    {
+      "target": "../catalogues/counplay?tab=cd&title=Congo - Kinshasa",
+      "text": "Congo - Kinshasa"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ck&title=Cook Islands",
+      "text": "Cook Islands"
+    },
+    {
+      "target": "../catalogues/counplay?tab=cr&title=Costa Rica",
+      "text": "Costa Rica"
+    },
+    {
+      "target": "../catalogues/counplay?tab=hr&title=Croatia",
+      "text": "Croatia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=cu&title=Cuba",
+      "text": "Cuba"
+    },
+    {
+      "target": "../catalogues/counplay?tab=cw&title=Curaçao",
+      "text": "Curaçao"
+    },
+    {
+      "target": "../catalogues/counplay?tab=cy&title=Cyprus",
+      "text": "Cyprus"
+    },
+    {
+      "target": "../catalogues/counplay?tab=cz&title=Czechia",
+      "text": "Czechia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ci&title=Côte d’Ivoire",
+      "text": "Côte d’Ivoire"
+    },
+    {
+      "target": "../catalogues/counplay?tab=dk&title=Denmark",
+      "text": "Denmark"
+    },
+    {
+      "target": "../catalogues/counplay?tab=dj&title=Djibouti",
+      "text": "Djibouti"
+    },
+    {
+      "target": "../catalogues/counplay?tab=do&title=Dominican Republic",
+      "text": "Dominican Republic"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ec&title=Ecuador",
+      "text": "Ecuador"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mar&title=Marathi",
+      "text": "Marathi"
+    },
+    {
+      "target": "../catalogues/counplay?tab=eg&title=Egypt",
+      "text": "Egypt"
+    },
+    {
+      "target": "../catalogues/counplay?tab=sv&title=El Salvador",
+      "text": "El Salvador"
+    },
+    {
+      "target": "../catalogues/counplay?tab=gq&title=Equatorial Guinea",
+      "text": "Equatorial Guinea"
+    },
+    {
+      "target": "../catalogues/counplay?tab=er&title=Eritrea",
+      "text": "Eritrea"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ee&title=Estonia",
+      "text": "Estonia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=sz&title=Eswatini",
+      "text": "Eswatini"
+    },
+    {
+      "target": "../catalogues/counplay?tab=et&title=Ethiopia",
+      "text": "Ethiopia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=fo&title=Faroe Islands",
+      "text": "Faroe Islands"
+    },
+    {
+      "target": "../catalogues/counplay?tab=fj&title=Fiji",
+      "text": "Fiji"
+    },
+    {
+      "target": "../catalogues/counplay?tab=fi&title=Finland",
+      "text": "Finland"
+    },
+    {
+      "target": "../catalogues/counplay?tab=fr&title=France",
+      "text": "France"
+    },
+    {
+      "target": "../catalogues/counplay?tab=gf&title=French Guiana",
+      "text": "French Guiana"
+    },
+    {
+      "target": "../catalogues/counplay?tab=pf&title=French Polynesia",
+      "text": "French Polynesia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=tf&title=French Southern Territories",
+      "text": "French Southern Territories"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ga&title=Gabon",
+      "text": "Gabon"
+    },
+    {
+      "target": "../catalogues/counplay?tab=gm&title=Gambia",
+      "text": "Gambia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ge&title=Georgia",
+      "text": "Georgia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=de&title=Germany",
+      "text": "Germany"
+    },
+    {
+      "target": "../catalogues/counplay?tab=gh&title=Ghana",
+      "text": "Ghana"
+    },
+    {
+      "target": "../catalogues/counplay?tab=gr&title=Greece",
+      "text": "Greece"
+    },
+    {
+      "target": "../catalogues/counplay?tab=gp&title=Guadeloupe",
+      "text": "Guadeloupe"
+    },
+    {
+      "target": "../catalogues/counplay?tab=gu&title=Guam",
+      "text": "Guam"
+    },
+    {
+      "target": "../catalogues/counplay?tab=gt&title=Guatemala",
+      "text": "Guatemala"
+    },
+    {
+      "target": "../catalogues/counplay?tab=gn&title=Guinea",
+      "text": "Guinea"
+    },
+    {
+      "target": "../catalogues/counplay?tab=gw&title=Guinea-Bissau",
+      "text": "Guinea-Bissau"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ht&title=Haiti",
+      "text": "Haiti"
+    },
+    {
+      "target": "../catalogues/counplay?tab=hn&title=Honduras",
+      "text": "Honduras"
+    },
+    {
+      "target": "../catalogues/counplay?tab=hk&title=Hong Kong",
+      "text": "Hong Kong"
+    },
+    {
+      "target": "../catalogues/counplay?tab=is&title=Iceland",
+      "text": "Iceland"
+    },
+    {
+      "target": "../catalogues/counplay?tab=in&title=India",
+      "text": "India"
+    },
+    {
+      "target": "../catalogues/counplay?tab=id&title=Indonesia",
+      "text": "Indonesia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=int&title=International",
+      "text": "International"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ir&title=Iran",
+      "text": "Iran"
+    },
+    {
+      "target": "../catalogues/counplay?tab=iq&title=Iraq",
+      "text": "Iraq"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ie&title=Ireland",
+      "text": "Ireland"
+    },
+    {
+      "target": "../catalogues/counplay?tab=il&title=Israel",
+      "text": "Israel"
+    },
+    {
+      "target": "../catalogues/counplay?tab=it&title=Italy",
+      "text": "Italy"
+    },
+    {
+      "target": "../catalogues/counplay?tab=jm&title=Jamaica",
+      "text": "Jamaica"
+    },
+    {
+      "target": "../catalogues/counplay?tab=jp&title=Japan",
+      "text": "Japan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=jo&title=Jordan",
+      "text": "Jordan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=kz&title=Kazakhstan",
+      "text": "Kazakhstan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ke&title=Kenya",
+      "text": "Kenya"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ki&title=Kiribati",
+      "text": "Kiribati"
+    },
+    {
+      "target": "../catalogues/counplay?tab=xk&title=Kosovo",
+      "text": "Kosovo"
+    },
+    {
+      "target": "../catalogues/counplay?tab=kg&title=Kyrgyzstan",
+      "text": "Kyrgyzstan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=la&title=Laos",
+      "text": "Laos"
+    },
+    {
+      "target": "../catalogues/counplay?tab=lv&title=Latvia",
+      "text": "Latvia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=lb&title=Lebanon",
+      "text": "Lebanon"
+    },
+    {
+      "target": "../catalogues/counplay?tab=lr&title=Liberia",
+      "text": "Liberia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ly&title=Libya",
+      "text": "Libya"
+    },
+    {
+      "target": "../catalogues/counplay?tab=li&title=Liechtenstein",
+      "text": "Liechtenstein"
+    },
+    {
+      "target": "../catalogues/counplay?tab=lt&title=Lithuania",
+      "text": "Lithuania"
+    },
+    {
+      "target": "../catalogues/counplay?tab=lu&title=Luxembourg",
+      "text": "Luxembourg"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mo&title=Macao",
+      "text": "Macao"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mg&title=Madagascar",
+      "text": "Madagascar"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mw&title=Malawi",
+      "text": "Malawi"
+    },
+    {
+      "target": "../catalogues/counplay?tab=my&title=Malaysia",
+      "text": "Malaysia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mv&title=Maldives",
+      "text": "Maldives"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ml&title=Mali",
+      "text": "Mali"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mt&title=Malta",
+      "text": "Malta"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mh&title=Marshall Islands",
+      "text": "Marshall Islands"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mq&title=Martinique",
+      "text": "Martinique"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mr&title=Mauritania",
+      "text": "Mauritania"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mu&title=Mauritius",
+      "text": "Mauritius"
+    },
+    {
+      "target": "../catalogues/counplay?tab=yt&title=Mayotte",
+      "text": "Mayotte"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mx&title=Mexico",
+      "text": "Mexico"
+    },
+    {
+      "target": "../catalogues/counplay?tab=fm&title=Micronesia",
+      "text": "Micronesia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=md&title=Moldova",
+      "text": "Moldova"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mc&title=Monaco",
+      "text": "Monaco"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mn&title=Mongolia",
+      "text": "Mongolia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=me&title=Montenegro",
+      "text": "Montenegro"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ma&title=Morocco",
+      "text": "Morocco"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mz&title=Mozambique",
+      "text": "Mozambique"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mm&title=Myanmar",
+      "text": "Myanmar"
+    },
+    {
+      "target": "../catalogues/counplay?tab=na&title=Namibia",
+      "text": "Namibia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=nr&title=Nauru",
+      "text": "Nauru"
+    },
+    {
+      "target": "../catalogues/counplay?tab=np&title=Nepal",
+      "text": "Nepal"
+    },
+    {
+      "target": "../catalogues/counplay?tab=nc&title=New Caledonia",
+      "text": "New Caledonia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=nz&title=New Zealand",
+      "text": "New Zealand"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ne&title=Niger",
+      "text": "Niger"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ng&title=Nigeria",
+      "text": "Nigeria"
+    },
+    {
+      "target": "../catalogues/counplay?tab=nu&title=Niue",
+      "text": "Niue"
+    },
+    {
+      "target": "../catalogues/counplay?tab=nf&title=Norfolk Island",
+      "text": "Norfolk Island"
+    },
+    {
+      "target": "../catalogues/counplay?tab=kp&title=North Korea",
+      "text": "North Korea"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mk&title=North Macedonia",
+      "text": "North Macedonia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mp&title=Northern Mariana Islands",
+      "text": "Northern Mariana Islands"
+    },
+    {
+      "target": "../catalogues/counplay?tab=no&title=Norway",
+      "text": "Norway"
+    },
+    {
+      "target": "../catalogues/counplay?tab=om&title=Oman",
+      "text": "Oman"
+    },
+    {
+      "target": "../catalogues/counplay?tab=pk&title=Pakistan",
+      "text": "Pakistan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ps&title=Palau",
+      "text": "Palau"
+    },
+    {
+      "target": "../catalogues/counplay?tab=pa&title=Panama",
+      "text": "Panama"
+    },
+    {
+      "target": "../catalogues/counplay?tab=pg&title=Papua New Guinea",
+      "text": "Papua New Guinea"
+    },
+    {
+      "target": "../catalogues/counplay?tab=py&title=Paraguay",
+      "text": "Paraguay"
+    },
+    {
+      "target": "../catalogues/counplay?tab=pe&title=Peru",
+      "text": "Peru"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ph&title=Philippines",
+      "text": "Philippines"
+    },
+    {
+      "target": "../catalogues/counplay?tab=pn&title=Pitcairn Islands",
+      "text": "Pitcairn Islands"
+    },
+    {
+      "target": "../catalogues/counplay?tab=pl&title=Poland",
+      "text": "Poland"
+    },
+    {
+      "target": "../catalogues/counplay?tab=pt&title=Portugal",
+      "text": "Portugal"
+    },
+    {
+      "target": "../catalogues/counplay?tab=pr&title=Puerto Rico",
+      "text": "Puerto Rico"
+    },
+    {
+      "target": "../catalogues/counplay?tab=qa&title=Qatar",
+      "text": "Qatar"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ro&title=Romania",
+      "text": "Romania"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ru&title=Russia",
+      "text": "Russia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=rw&title=Rwanda",
+      "text": "Rwanda"
+    },
+    {
+      "target": "../catalogues/counplay?tab=re&title=Réunion",
+      "text": "Réunion"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ws&title=Samoa",
+      "text": "Samoa"
+    },
+    {
+      "target": "../catalogues/counplay?tab=sm&title=San Marino",
+      "text": "San Marino"
+    },
+    {
+      "target": "../catalogues/counplay?tab=sa&title=Saudi Arabia",
+      "text": "Saudi Arabia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=sn&title=Senegal",
+      "text": "Senegal"
+    },
+    {
+      "target": "../catalogues/counplay?tab=rs&title=Serbia",
+      "text": "Serbia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=sc&title=Seychelles",
+      "text": "Seychelles"
+    },
+    {
+      "target": "../catalogues/counplay?tab=sl&title=Sierra Leone",
+      "text": "Sierra Leone"
+    },
+    {
+      "target": "../catalogues/counplay?tab=sg&title=Singapore",
+      "text": "Singapore"
+    },
+    {
+      "target": "../catalogues/counplay?tab=sk&title=Slovakia",
+      "text": "Slovakia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=si&title=Slovenia",
+      "text": "Slovenia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=sb&title=Solomon Islands",
+      "text": "Solomon Islands"
+    },
+    {
+      "target": "../catalogues/counplay?tab=so&title=Somalia",
+      "text": "Somalia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=za&title=South Africa",
+      "text": "South Africa"
+    },
+    {
+      "target": "../catalogues/counplay?tab=kr&title=South Korea",
+      "text": "South Korea"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ss&title=South Sudan",
+      "text": "South Sudan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=es&title=Spain",
+      "text": "Spain"
+    },
+    {
+      "target": "../catalogues/counplay?tab=lk&title=Sri Lanka",
+      "text": "Sri Lanka"
+    },
+    {
+      "target": "../catalogues/counplay?tab=bl&title=St. Barthélemy",
+      "text": "St. Barthélemy"
+    },
+    {
+      "target": "../catalogues/counplay?tab=sh&title=St. Helena",
+      "text": "St. Helena"
+    },
+    {
+      "target": "../catalogues/counplay?tab=mf&title=St. Martin",
+      "text": "St. Martin"
+    },
+    {
+      "target": "../catalogues/counplay?tab=sd&title=Sudan",
+      "text": "Sudan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=se&title=Sweden",
+      "text": "Sweden"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ch&title=Switzerland",
+      "text": "Switzerland"
+    },
+    {
+      "target": "../catalogues/counplay?tab=sy&title=Syria",
+      "text": "Syria"
+    },
+    {
+      "target": "../catalogues/counplay?tab=st&title=São Tomé & Príncipe",
+      "text": "São Tomé & Príncipe"
+    },
+    {
+      "target": "../catalogues/counplay?tab=tw&title=Taiwan",
+      "text": "Taiwan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=tj&title=Tajikistan",
+      "text": "Tajikistan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=tz&title=Tanzania",
+      "text": "Tanzania"
+    },
+    {
+      "target": "../catalogues/counplay?tab=th&title=Thailand",
+      "text": "Thailand"
+    },
+    {
+      "target": "../catalogues/counplay?tab=tl&title=Timor-Leste",
+      "text": "Timor-Leste"
+    },
+    {
+      "target": "../catalogues/counplay?tab=tg&title=Togo",
+      "text": "Togo"
+    },
+    {
+      "target": "../catalogues/counplay?tab=tk&title=Tokelau",
+      "text": "Tokelau"
+    },
+    {
+      "target": "../catalogues/counplay?tab=to&title=Tonga",
+      "text": "Tonga"
+    },
+    {
+      "target": "../catalogues/counplay?tab=tt&title=Trinidad & Tobago",
+      "text": "Trinidad & Tobago"
+    },
+    {
+      "target": "../catalogues/counplay?tab=tn&title=Tunisia",
+      "text": "Tunisia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=tr&title=Turkey",
+      "text": "Turkey"
+    },
+    {
+      "target": "../catalogues/counplay?tab=tm&title=Turkmenistan",
+      "text": "Turkmenistan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=tv&title=Tuvalu",
+      "text": "Tuvalu"
+    },
+    {
+      "target": "../catalogues/counplay?tab=vi&title=U.S. Virgin Islands",
+      "text": "U.S. Virgin Islands"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ug&title=Uganda",
+      "text": "Uganda"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ua&title=Ukraine",
+      "text": "Ukraine"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ae&title=United Arab Emirates",
+      "text": "United Arab Emirates"
+    },
+    {
+      "target": "../catalogues/counplay?tab=uk&title=United Kingdom",
+      "text": "United Kingdom"
+    },
+    {
+      "target": "../catalogues/counplay?tab=us&title=United States",
+      "text": "United States"
+    },
+    {
+      "target": "../catalogues/counplay?tab=uy&title=Uruguay",
+      "text": "Uruguay"
+    },
+    {
+      "target": "../catalogues/counplay?tab=uz&title=Uzbekistan",
+      "text": "Uzbekistan"
+    },
+    {
+      "target": "../catalogues/counplay?tab=vu&title=Vanuatu",
+      "text": "Vanuatu"
+    },
+    {
+      "target": "../catalogues/counplay?tab=va&title=Vatican City",
+      "text": "Vatican City"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ve&title=Venezuela",
+      "text": "Venezuela"
+    },
+    {
+      "target": "../catalogues/counplay?tab=vn&title=Vietnam",
+      "text": "Vietnam"
+    },
+    {
+      "target": "../catalogues/counplay?tab=wf&title=Wallis & Futuna",
+      "text": "Wallis & Futuna"
+    },
+    {
+      "target": "../catalogues/counplay?tab=eh&title=Western Sahara",
+      "text": "Western Sahara"
+    },
+    {
+      "target": "../catalogues/counplay?tab=ye&title=Yemen",
+      "text": "Yemen"
+    },
+    {
+      "target": "../catalogues/counplay?tab=zm&title=Zambia",
+      "text": "Zambia"
+    },
+    {
+      "target": "../catalogues/counplay?tab=zw&title=Zimbabwe",
+      "text": "Zimbabwe"
+    },
+    {
+      "target": "../catalogues/counplay?tab=undefined&title=Others",
+      "text": "Others"
+    }
+  ]
+}

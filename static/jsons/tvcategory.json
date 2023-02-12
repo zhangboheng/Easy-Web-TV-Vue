@@ -1,0 +1,94 @@
+{
+    "ret": [{
+        "target": "../catalogues/playarea?tab=auto",
+        "text": "Auto"
+      },{
+        "target": "../catalogues/playarea?tab=animation",
+        "text": "Animation"
+      },{
+        "target": "../catalogues/playarea?tab=business",
+        "text": "Business"
+      },{
+        "target": "../catalogues/playarea?tab=classic",
+        "text": "Classic"
+      },{
+        "target": "../catalogues/playarea?tab=comedy",
+        "text": "Comedy"
+      },{
+        "target": "../catalogues/playarea?tab=cooking",
+        "text": "Cooking"
+      },{
+        "target": "../catalogues/playarea?tab=culture",
+        "text": "Culture"
+      },{
+        "target": "../catalogues/playarea?tab=documentary",
+        "text": "Documentary"
+      },{
+        "target": "../catalogues/playarea?tab=education",
+        "text": "Education"
+      },{
+        "target": "../catalogues/playarea?tab=entertainment",
+        "text": "Entertainment"
+      },{
+        "target": "../catalogues/playarea?tab=family",
+        "text": "Family"
+      },{
+        "target": "../catalogues/playarea?tab=general",
+        "text": "General"
+      },{
+        "target": "../catalogues/playarea?tab=kids",
+        "text": "Kids"
+      },{
+        "target": "../catalogues/playarea?tab=legislative",
+        "text": "Legislative"
+      },{
+        "target": "../catalogues/playarea?tab=lifestyle",
+        "text": "Lifestyle"
+      },{
+        "target": "../catalogues/playarea?tab=local",
+        "text": "Local"
+      },{
+        "target": "../catalogues/playarea?tab=movies",
+        "text": "Movies"
+      },{
+        "target": "../catalogues/playarea?tab=music",
+        "text": "Music"
+      },{
+        "target": "../catalogues/playarea?tab=news",
+        "text": "News"
+      },{
+        "target": "../catalogues/playarea?tab=outdoor",
+        "text": "Outdoor"
+      },{
+        "target": "../catalogues/playarea?tab=relax",
+        "text": "Relax"
+      },{
+        "target": "../catalogues/playarea?tab=religious",
+        "text": "Religious"
+      },{
+        "target": "../catalogues/playarea?tab=science",
+        "text": "Science"
+      },{
+        "target": "../catalogues/playarea?tab=series",
+        "text": "Series"
+      },{
+        "target": "../catalogues/playarea?tab=shop",
+        "text": "Shop"
+      },{
+        "target": "../catalogues/playarea?tab=sport",
+        "text": "Sport"
+      },{
+        "target": "../catalogues/playarea?tab=travel",
+        "text": "Travel"
+      },{
+        "target": "../catalogues/playarea?tab=weather",
+        "text": "Weather"
+      },{
+        "target": "../catalogues/playarea?tab=xxx",
+        "text": "XXX"
+      },{
+        "target": "../catalogues/playarea?tab=undefined",
+        "text": "Other"
+      }
+    ]
+  }

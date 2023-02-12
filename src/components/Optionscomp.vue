@@ -76,7 +76,7 @@ const options = ref([
   { text: 'Greek - Ελληνικά', value: 'el' },
   { text: 'Gujarati - ગુજરાતી', value: 'gu' },
   { text: 'Hausa', value: 'ha' },
-  { text: 'Hawaiian - ʻŌlelo Hawaiʻi', value: 'ha' },
+  { text: 'Hawaiian - ʻŌlelo Hawaiʻi', value: 'haw' },
   { text: 'Hebrew - עברית', value: 'he' },
   { text: 'Hindi - हिन्दी', value: 'hi' },
   { text: 'Hungarian - magyar', value: 'hu' },

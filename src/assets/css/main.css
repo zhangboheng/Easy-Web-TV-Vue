@@ -103,7 +103,7 @@ input[type="button"] {
 
 #menu {
     overflow-x: hidden;
-    height: 100vh;
+    height: calc(100vh - 60px);
 }
 
 #search {
@@ -162,7 +162,7 @@ input[type="button"] {
     background: #fff;
     z-index: 999;
     border-radius: 25px;
-    background-image: url("../images/previous.jpg");
+    background-image: url('.../images/previous.jpg');
     opacity: 0.5;
     cursor: pointer;
     color: #000;

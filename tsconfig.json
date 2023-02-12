@@ -2,7 +2,8 @@
   "files": [],
   "compilerOptions": {
     "resolveJsonModule": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "allowJs": true
   },
   "references": [
     {

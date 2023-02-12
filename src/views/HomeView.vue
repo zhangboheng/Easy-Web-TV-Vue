@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import '../assets/css/base.css';
 import { ref, reactive, onMounted, nextTick } from 'vue';
 import CustomView from '@/components/CustomView.vue';
 import OptionsComp from '@/components/Optionscomp.vue';
