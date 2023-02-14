@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import '../assets/css/main.css';
 import VideoEmbed from '@/components/VideoJs.vue'
-import { ref, nextTick } from 'vue';
+import Tools from '@/components/Tools.vue'
+import { ref, nextTick, onMounted } from 'vue';
 import axios from 'axios';
 
 var lst = [];
@@ -9,6 +10,10 @@ var checkSeen = ref(true);
 var itemName = ref("");
 var loveIcon = ref(true)
 var inputMessage = ref("");
+var numCount = ref(0);
+var toggleRule = ref(true);
+const myDivWidth =  ref<HTMLElement | null>(null);
+var toRight = ref();
 //Get default localstorage key
 var paramKey = ['countries', 'languages', 'categories'];
 const urlParams = new URLSearchParams(window.location.search);
@@ -16,6 +21,9 @@ const key = urlParams.get('tab');
 const tis = urlParams.get('title');
 const tyv = urlParams.get('typev');
 document.title = tis + ' Channels';
+onMounted(()=>{
+    toRight.value = myDivWidth.value?.getBoundingClientRect().width;
+})
 //Get TV Channels List
 axios.get(`https://iptv-org.github.io/iptv/${paramKey[Number(tyv) - 1]}/` + key + ".m3u")
     .then(response => {
@@ -25,18 +33,19 @@ axios.get(`https://iptv-org.github.io/iptv/${paramKey[Number(tyv) - 1]}/` + key 
         itemName.value = lst[0][1];
     });
 //Click Item Play Videos
-function playItem(_e: string) {
+function playItem(_e: string, _index:number) {
     itemName.value = _e;
+    numCount.value = _index;
 }
 //Set Love Icon Size
 function getClass(_a: string, _b: string) {
-    let loveIcon: string = "";
+    let abc: string = "";
     if (window.innerWidth > 640) {
-        loveIcon = window.localStorage.getItem(_a) == _b ? 'favourimage' : 'unfavourimage';
+        abc = window.localStorage.getItem(_a) == _b ? 'favourimage' : 'unfavourimage';
     } else {
-        loveIcon = window.localStorage.getItem(_a) == _b ? 'favourimage20' : 'unfavourimage20';
+        abc = window.localStorage.getItem(_a) == _b ? 'favourimage20' : 'unfavourimage20';
     }
-    return loveIcon;
+    return abc;
 }
 //Change Icon State
 function changeIcon(_a: string, _b: string) {
@@ -54,23 +63,22 @@ function changeIcon(_a: string, _b: string) {
         loveIcon.value = !loveIcon.value;
     });
 }
-
-function filterArr(e:any){
-    let inputValue:string = e.target.value.toLowerCase();
-    let mas = lst.filter((x:string)=>x[0].toLowerCase().indexOf(inputValue)>-1);
+function updateMessage(valueLink:any){
+    if(valueLink.toLowerCase().endsWith('.m3u8')){
+        itemName.value = valueLink
+    }
 }
-
 </script>
 <template>
-    <div id="left">
+    <div id="left" ref="myDivWidth" v-show="toggleRule">
         <h3> {{ tis }} </h3>
         <ul id="menu">
             <li v-show="checkSeen">
                 <p>Channels list is loading...</p>
             </li>
-            <li style="background-color:#fff"><input id="search" type="text" placeholder="Search..." v-model="inputMessage" /></li>
-            <li v-for="(item, value) of lst.filter((x:string)=>x[0].toLowerCase().indexOf(inputMessage.toLowerCase())>-1)">
-                <p @click="playItem(item[1])">
+            <li v-show="!checkSeen" style="background-color:#fff"><input id="search" type="text" placeholder="Search..." v-model="inputMessage" /></li>
+            <li v-for="(item, index) of lst.filter((x:string)=>x[0].toLowerCase().indexOf(inputMessage.toLowerCase())>-1)" @click="playItem(item[1], index)" :class="index == numCount ? 'bd' : ''">
+                <p>
                     <input type="button"
                         :class="loveIcon ? getClass(item[1], item[0]) : getClass(item[1], item[0])"
                         @click="changeIcon(item[1], item[0])" />
@@ -79,30 +87,8 @@ function filterArr(e:any){
             </li>
         </ul>
     </div>
-    <div class="toggle"></div>
-    <div id="control">
-        <div id="menuicon" title="Toggle tools menu">
-        </div>
-        <div id="player" title="Play M3U8 Link videos">
-        </div>
-        <input id="inputlink" type="text" placeholder="Support m3u8 links to watch video...">
-        <div id="prev" title="Back to previous page">
-        </div>
-        <div id="github" title="Go to project github">
-        </div>
-        <div id="favorite" title="Open your favorite channels list">
-        </div>
-        <div id="channelist">
-            <h3>Favorite</h3>
-            <ul id="channelcontent">
-                <li>
-                    <p>Please click like to collect</p>
-                </li>
-            </ul>
-        </div>
-        <div id="shuffleplay" title="Random play channels video">
-        </div>
-    </div>
+    <Tools targetLink=""  @sendParameter:click-play="updateMessage"/>
+    <div class="toggle" :style="{ left: toggleRule ? toRight - 50 + 'px' : '5px' }" @click="toggleRule=!toggleRule"></div>
     <div id="right">
         <div id="div1">
             <!-- The element where the player will be placed -->
