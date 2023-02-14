@@ -4,27 +4,25 @@ import VideoEmbed from '@/components/VideoJs.vue'
 import { ref, nextTick } from 'vue';
 import axios from 'axios';
 
-var channels = [];
 var lst = [];
 var checkSeen = ref(true);
 var itemName = ref("");
 var loveIcon = ref(true)
+var inputMessage = ref("");
 //Get default localstorage key
-var localkey = ['manga', 'bannedcountries', 'novel', 'movie', 'music', 'languages', 'porn', 'adult'];
+var paramKey = ['countries', 'languages', 'categories'];
 const urlParams = new URLSearchParams(window.location.search);
-var key = urlParams.get('tab');
-var tis = urlParams.get('title');
+const key = urlParams.get('tab');
+const tis = urlParams.get('title');
+const tyv = urlParams.get('typev');
 document.title = tis + ' Channels';
 //Get TV Channels List
-axios.get('https://iptv-org.github.io/iptv/countries/' + key + ".m3u")
+axios.get(`https://iptv-org.github.io/iptv/${paramKey[Number(tyv) - 1]}/` + key + ".m3u")
     .then(response => {
         checkSeen.value = false;
         let str = response.data;
         lst = str.split(",").slice(1,).filter((x: string) => /[^h]+.m3u8/.test(x)).map((x: string) => x.split("\n"));
-        for (let i = 0; i < lst.length; i++) {
-            channels.push(lst[i][1]);
-        }
-        itemName.value = channels[0];
+        itemName.value = lst[0][1];
     });
 //Click Item Play Videos
 function playItem(_e: string) {
@@ -46,15 +44,20 @@ function changeIcon(_a: string, _b: string) {
         console.log("Browser not support localstorage");
         return false;
     } else {
-        if(getClass(_a, _b) == "favourimage" || getClass(_a, _b) == "favourimage20"){
+        if (getClass(_a, _b) == "favourimage" || getClass(_a, _b) == "favourimage20") {
             localStorage.removeItem(_a);
-        }else{
+        } else {
             window.localStorage.setItem(_a, _b);
         }
     }
-    nextTick(()=>{
+    nextTick(() => {
         loveIcon.value = !loveIcon.value;
     });
+}
+
+function filterArr(e:any){
+    let inputValue:string = e.target.value.toLowerCase();
+    let mas = lst.filter((x:string)=>x[0].toLowerCase().indexOf(inputValue)>-1);
 }
 
 </script>
@@ -65,11 +68,13 @@ function changeIcon(_a: string, _b: string) {
             <li v-show="checkSeen">
                 <p>Channels list is loading...</p>
             </li>
-            <li v-for="(item, value) of lst">
-                <p @click="playItem(channels[value])">
-                    <input type="button" :class="loveIcon ? getClass(channels[value], item[0]) : getClass(channels[value], item[0])"
-                        @click="changeIcon(channels[value], item[0])" />
-                    <span :title="channels[value]">{{ item[0] }}</span>
+            <li style="background-color:#fff"><input id="search" type="text" placeholder="Search..." v-model="inputMessage" /></li>
+            <li v-for="(item, value) of lst.filter((x:string)=>x[0].toLowerCase().indexOf(inputMessage.toLowerCase())>-1)">
+                <p @click="playItem(item[1])">
+                    <input type="button"
+                        :class="loveIcon ? getClass(item[1], item[0]) : getClass(item[1], item[0])"
+                        @click="changeIcon(item[1], item[0])" />
+                    <span :title="item[1]">{{ item[0] }}</span>
                 </p>
             </li>
         </ul>

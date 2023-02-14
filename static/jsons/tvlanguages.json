@@ -1,359 +1,355 @@
 {
   "ret": [
     {
-      "target": "../catalogues/langplay?tab=aka&title=Akan",
-      "text": "Akan"
-    },
-    {
-      "target": "../catalogues/langplay?tab=sqi&title=Albanian",
+      "target": "../catalogues/counplay?tab=sqi&title=Albanian&typev=2",
       "text": "Albanian"
     },
     {
-      "target": "../catalogues/langplay?tab=amh&title=Amharic",
+      "target": "../catalogues/counplay?tab=amh&title=Amharic&typev=2",
       "text": "Amharic"
     },
     {
-      "target": "../catalogues/langplay?tab=ara&title=Arabic",
+      "target": "../catalogues/counplay?tab=ara&title=Arabic&typev=2",
       "text": "Arabic"
     },
     {
-      "target": "../catalogues/langplay?tab=hye&title=Armenian",
+      "target": "../catalogues/counplay?tab=hye&title=Armenian&typev=2",
       "text": "Armenian"
     },
     {
-      "target": "../catalogues/langplay?tab=aii&title=Assyrian Neo-Aramaic",
+      "target": "../catalogues/counplay?tab=aii&title=Assyrian Neo-Aramaic&typev=2",
       "text": "Assyrian Neo-Aramaic"
     },
     {
-      "target": "../catalogues/langplay?tab=aze&title=Azerbaijani",
+      "target": "../catalogues/counplay?tab=aze&title=Azerbaijani&typev=2",
       "text": "Azerbaijani"
     },
     {
-      "target": "../catalogues/langplay?tab=bak&title=Bashkir",
+      "target": "../catalogues/counplay?tab=bak&title=Bashkir&typev=2",
       "text": "Bashkir"
     },
     {
-      "target": "../catalogues/langplay?tab=ben&title=Bengali",
+      "target": "../catalogues/counplay?tab=ben&title=Bengali&typev=2",
       "text": "Bengali"
     },
     {
-      "target": "../catalogues/langplay?tab=bho&title=Bhojpuri",
+      "target": "../catalogues/counplay?tab=bho&title=Bhojpuri&typev=2",
       "text": "Bhojpuri"
     },
     {
-      "target": "../catalogues/langplay?tab=bos&title=Bosnian",
+      "target": "../catalogues/counplay?tab=bos&title=Bosnian&typev=2",
       "text": "Bosnian"
     },
     {
-      "target": "../catalogues/langplay?tab=bul&title=Bulgarian",
+      "target": "../catalogues/counplay?tab=bul&title=Bulgarian&typev=2",
       "text": "Bulgarian"
     },
     {
-      "target": "../catalogues/langplay?tab=mya&title=Burmese",
+      "target": "../catalogues/counplay?tab=mya&title=Burmese&typev=2",
       "text": "Burmese"
     },
     {
-      "target": "../catalogues/langplay?tab=cat&title=Catalan",
+      "target": "../catalogues/counplay?tab=cat&title=Catalan&typev=2",
       "text": "Catalan"
     },
     {
-      "target": "../catalogues/langplay?tab=zho&title=Chinese",
+      "target": "../catalogues/counplay?tab=zho&title=Chinese&typev=2",
       "text": "Chinese"
     },
     {
-      "target": "../catalogues/langplay?tab=hrv&title=Croatian",
+      "target": "../catalogues/counplay?tab=hrv&title=Croatian&typev=2",
       "text": "Croatian"
     },
     {
-      "target": "../catalogues/langplay?tab=ces&title=Czech",
+      "target": "../catalogues/counplay?tab=ces&title=Czech&typev=2",
       "text": "Czech"
     },
     {
-      "target": "../catalogues/langplay?tab=dan&title=Danish",
+      "target": "../catalogues/counplay?tab=dan&title=Danish&typev=2",
       "text": "Danish"
     },
     {
-      "target": "../catalogues/langplay?tab=nld&title=Dutch",
+      "target": "../catalogues/counplay?tab=nld&title=Dutch&typev=2",
       "text": "Dutch"
     },
     {
-      "target": "../catalogues/langplay?tab=eng&title=English",
+      "target": "../catalogues/counplay?tab=eng&title=English&typev=2",
       "text": "English"
     },
     {
-      "target": "../catalogues/langplay?tab=est&title=Estonian",
+      "target": "../catalogues/counplay?tab=est&title=Estonian&typev=2",
       "text": "Estonian"
     },
     {
-      "target": "../catalogues/langplay?tab=fao&title=Faroese",
+      "target": "../catalogues/counplay?tab=fao&title=Faroese&typev=2",
       "text": "Faroese"
     },
     {
-      "target": "../catalogues/langplay?tab=fin&title=Finnish",
+      "target": "../catalogues/counplay?tab=fin&title=Finnish&typev=2",
       "text": "Finnish"
     },
     {
-      "target": "../catalogues/langplay?tab=fra&title=French",
+      "target": "../catalogues/counplay?tab=fra&title=French&typev=2",
       "text": "French"
     },
     {
-      "target": "../catalogues/langplay?tab=glg&title=Galician",
+      "target": "../catalogues/counplay?tab=glg&title=Galician&typev=2",
       "text": "Galician"
     },
     {
-      "target": "../catalogues/langplay?tab=kat&title=Georgian",
+      "target": "../catalogues/counplay?tab=kat&title=Georgian&typev=2",
       "text": "Georgian"
     },
     {
-      "target": "../catalogues/langplay?tab=deu&title=German",
+      "target": "../catalogues/counplay?tab=deu&title=German&typev=2",
       "text": "German"
     },
     {
-      "target": "../catalogues/langplay?tab=heb&title=Hebrew",
+      "target": "../catalogues/counplay?tab=heb&title=Hebrew&typev=2",
       "text": "Hebrew"
     },
     {
-      "target": "../catalogues/langplay?tab=hin&title=Hindi",
+      "target": "../catalogues/counplay?tab=hin&title=Hindi&typev=2",
       "text": "Hindi"
     },
     {
-      "target": "../catalogues/langplay?tab=hun&title=Hungarian",
+      "target": "../catalogues/counplay?tab=hun&title=Hungarian&typev=2",
       "text": "Hungarian"
     },
     {
-      "target": "../catalogues/langplay?tab=isl&title=Icelandic",
+      "target": "../catalogues/counplay?tab=isl&title=Icelandic&typev=2",
       "text": "Icelandic"
     },
     {
-      "target": "../catalogues/langplay?tab=ind&title=Indonesian",
+      "target": "../catalogues/counplay?tab=ind&title=Indonesian&typev=2",
       "text": "Indonesian"
     },
     {
-      "target": "../catalogues/langplay?tab=iku&title=Inuktitut",
+      "target": "../catalogues/counplay?tab=iku&title=Inuktitut&typev=2",
       "text": "Inuktitut"
     },
     {
-      "target": "../catalogues/langplay?tab=ita&title=Italian",
+      "target": "../catalogues/counplay?tab=ita&title=Italian&typev=2",
       "text": "Italian"
     },
     {
-      "target": "../catalogues/langplay?tab=jpn&title=Japanese",
+      "target": "../catalogues/counplay?tab=jpn&title=Japanese&typev=2",
       "text": "Japanese"
     },
     {
-      "target": "../catalogues/langplay?tab=jav&title=Javanese",
+      "target": "../catalogues/counplay?tab=jav&title=Javanese&typev=2",
       "text": "Javanese"
     },
     {
-      "target": "../catalogues/langplay?tab=kan&title=Kannada",
+      "target": "../catalogues/counplay?tab=kan&title=Kannada&typev=2",
       "text": "Kannada"
     },
     {
-      "target": "../catalogues/langplay?tab=kaz&title=Kazakh",
+      "target": "../catalogues/counplay?tab=kaz&title=Kazakh&typev=2",
       "text": "Kazakh"
     },
     {
-      "target": "../catalogues/langplay?tab=khm&title=Khmer",
+      "target": "../catalogues/counplay?tab=khm&title=Khmer&typev=2",
       "text": "Khmer"
     },
     {
-      "target": "../catalogues/langplay?tab=kin&title=Kinyarwanda",
+      "target": "../catalogues/counplay?tab=kin&title=Kinyarwanda&typev=2",
       "text": "Kinyarwanda"
     },
     {
-      "target": "../catalogues/langplay?tab=kor&title=Korean",
+      "target": "../catalogues/counplay?tab=kor&title=Korean&typev=2",
       "text": "Korean"
     },
     {
-      "target": "../catalogues/langplay?tab=kur&title=Kurdish",
+      "target": "../catalogues/counplay?tab=kur&title=Kurdish&typev=2",
       "text": "Kurdish"
     },
     {
-      "target": "../catalogues/langplay?tab=kir&title=Kyrgyz",
+      "target": "../catalogues/counplay?tab=kir&title=Kyrgyz&typev=2",
       "text": "Kyrgyz"
     },
     {
-      "target": "../catalogues/langplay?tab=lao&title=Lao",
+      "target": "../catalogues/counplay?tab=lao&title=Lao&typev=2",
       "text": "Lao"
     },
     {
-      "target": "../catalogues/langplay?tab=lav&title=Latvian",
+      "target": "../catalogues/counplay?tab=lav&title=Latvian&typev=2",
       "text": "Latvian"
     },
     {
-      "target": "../catalogues/langplay?tab=lit&title=Lithuanian",
+      "target": "../catalogues/counplay?tab=lit&title=Lithuanian&typev=2",
       "text": "Lithuanian"
     },
     {
-      "target": "../catalogues/langplay?tab=ltz&title=Luxembourgish",
+      "target": "../catalogues/counplay?tab=ltz&title=Luxembourgish&typev=2",
       "text": "Luxembourgish"
     },
     {
-      "target": "../catalogues/langplay?tab=mkd&title=Macedonian",
+      "target": "../catalogues/counplay?tab=mkd&title=Macedonian&typev=2",
       "text": "Macedonian"
     },
     {
-      "target": "../catalogues/langplay?tab=msa&title=Malay (macrolanguage)",
+      "target": "../catalogues/counplay?tab=msa&title=Malay (macrolanguage)&typev=2",
       "text": "Malay (macrolanguage)"
     },
     {
-      "target": "../catalogues/langplay?tab=mal&title=Malayalam",
+      "target": "../catalogues/counplay?tab=mal&title=Malayalam&typev=2",
       "text": "Malayalam"
     },
     {
-      "target": "../catalogues/langplay?tab=mlt&title=Maltese",
+      "target": "../catalogues/counplay?tab=mlt&title=Maltese&typev=2",
       "text": "Maltese"
     },
     {
-      "target": "../catalogues/langplay?tab=cmn&title=Mandarin Chinese",
+      "target": "../catalogues/counplay?tab=cmn&title=Mandarin Chinese&typev=2",
       "text": "Mandarin Chinese"
     },
     {
-      "target": "../catalogues/langplay?tab=mri&title=Maori",
+      "target": "../catalogues/counplay?tab=mri&title=Maori&typev=2",
       "text": "Maori"
     },
     {
-      "target": "../catalogues/langplay?tab=mar&title=Marathi",
+      "target": "../catalogues/counplay?tab=mar&title=Marathi&typev=2",
       "text": "Marathi"
     },
     {
-      "target": "../catalogues/langplay?tab=nan&title=Min Nan Chinese",
+      "target": "../catalogues/counplay?tab=nan&title=Min Nan Chinese&typev=2",
       "text": "Min Nan Chinese"
     },
     {
-      "target": "../catalogues/langplay?tab=ell&title=Modern Greek (1453-)",
+      "target": "../catalogues/counplay?tab=ell&title=Modern Greek (1453-)&typev=2",
       "text": "Modern Greek (1453-)"
     },
     {
-      "target": "../catalogues/langplay?tab=mon&title=Mongolian",
+      "target": "../catalogues/counplay?tab=mon&title=Mongolian&typev=2",
       "text": "Mongolian"
     },
     {
-      "target": "../catalogues/langplay?tab=cnr&title=Montenegrin",
+      "target": "../catalogues/counplay?tab=cnr&title=Montenegrin&typev=2",
       "text": "Montenegrin"
     },
     {
-      "target": "../catalogues/langplay?tab=nep&title=Nepali (macrolanguage)",
+      "target": "../catalogues/counplay?tab=nep&title=Nepali (macrolanguage)&typev=2",
       "text": "Nepali (macrolanguage)"
     },
     {
-      "target": "../catalogues/langplay?tab=nob&title=Norwegian Bokmål",
+      "target": "../catalogues/counplay?tab=nob&title=Norwegian Bokmål&typev=2",
       "text": "Norwegian Bokmål"
     },
     {
-      "target": "../catalogues/langplay?tab=pan&title=Panjabi",
+      "target": "../catalogues/counplay?tab=pan&title=Panjabi&typev=2",
       "text": "Panjabi"
     },
     {
-      "target": "../catalogues/langplay?tab=pus&title=Pashto",
+      "target": "../catalogues/counplay?tab=pus&title=Pashto&typev=2",
       "text": "Pashto"
     },
     {
-      "target": "../catalogues/langplay?tab=fas&title=Persian",
+      "target": "../catalogues/counplay?tab=fas&title=Persian&typev=2",
       "text": "Persian"
     },
     {
-      "target": "../catalogues/langplay?tab=pol&title=Polish",
+      "target": "../catalogues/counplay?tab=pol&title=Polish&typev=2",
       "text": "Polish"
     },
     {
-      "target": "../catalogues/langplay?tab=pus&title=Pashto",
+      "target": "../catalogues/counplay?tab=pus&title=Pashto&typev=2",
       "text": "Pashto"
     },
     {
-      "target": "../catalogues/langplay?tab=por&title=Portuguese",
+      "target": "../catalogues/counplay?tab=por&title=Portuguese&typev=2",
       "text": "Portuguese"
     },
     {
-      "target": "../catalogues/langplay?tab=ron&title=Romanian",
+      "target": "../catalogues/counplay?tab=ron&title=Romanian&typev=2",
       "text": "Romanian"
     },
     {
-      "target": "../catalogues/langplay?tab=rus&title=Russian",
+      "target": "../catalogues/counplay?tab=rus&title=Russian&typev=2",
       "text": "Russian"
     },
     {
-      "target": "../catalogues/langplay?tab=srp&title=Serbian",
+      "target": "../catalogues/counplay?tab=srp&title=Serbian&typev=2",
       "text": "Serbian"
     },
     {
-      "target": "../catalogues/langplay?tab=sin&title=Sinhala",
+      "target": "../catalogues/counplay?tab=sin&title=Sinhala&typev=2",
       "text": "Sinhala"
     },
     {
-      "target": "../catalogues/langplay?tab=slk&title=Slovak",
+      "target": "../catalogues/counplay?tab=slk&title=Slovak&typev=2",
       "text": "Slovak"
     },
     {
-      "target": "../catalogues/langplay?tab=slv&title=Slovenian",
+      "target": "../catalogues/counplay?tab=slv&title=Slovenian&typev=2",
       "text": "Slovenian"
     },
     {
-      "target": "../catalogues/langplay?tab=som&title=Somali",
+      "target": "../catalogues/counplay?tab=som&title=Somali&typev=2",
       "text": "Somali"
     },
     {
-      "target": "../catalogues/langplay?tab=spa&title=Spanish",
+      "target": "../catalogues/counplay?tab=spa&title=Spanish&typev=2",
       "text": "Spanish"
     },
     {
-      "target": "../catalogues/langplay?tab=sun&title=Sundanese",
+      "target": "../catalogues/counplay?tab=sun&title=Sundanese&typev=2",
       "text": "Sundanese"
     },
     {
-      "target": "../catalogues/langplay?tab=swe&title=Swedish",
+      "target": "../catalogues/counplay?tab=swe&title=Swedish&typev=2",
       "text": "Swedish"
     },
     {
-      "target": "../catalogues/langplay?tab=tgl&title=Tagalog",
+      "target": "../catalogues/counplay?tab=tgl&title=Tagalog&typev=2",
       "text": "Tagalog"
     },
     {
-      "target": "../catalogues/langplay?tab=tam&title=Tamil",
+      "target": "../catalogues/counplay?tab=tam&title=Tamil&typev=2",
       "text": "Tamil"
     },
     {
-      "target": "../catalogues/langplay?tab=tel&title=Telugu",
+      "target": "../catalogues/counplay?tab=tel&title=Telugu&typev=2",
       "text": "Telugu"
     },
     {
-      "target": "../catalogues/langplay?tab=tha&title=Thai",
+      "target": "../catalogues/counplay?tab=tha&title=Thai&typev=2",
       "text": "Thai"
     },
     {
-      "target": "../catalogues/langplay?tab=tur&title=Turkish",
+      "target": "../catalogues/counplay?tab=tur&title=Turkish&typev=2",
       "text": "Turkish"
     },
     {
-      "target": "../catalogues/langplay?tab=tuk&title=Turkmen",
+      "target": "../catalogues/counplay?tab=tuk&title=Turkmen&typev=2",
       "text": "Turkmen"
     },
     {
-      "target": "../catalogues/langplay?tab=ukr&title=Ukrainian",
+      "target": "../catalogues/counplay?tab=ukr&title=Ukrainian&typev=2",
       "text": "Ukrainian"
     },
     {
-      "target": "../catalogues/langplay?tab=urd&title=Urdu",
+      "target": "../catalogues/counplay?tab=urd&title=Urdu&typev=2",
       "text": "Urdu"
     },
     {
-      "target": "../catalogues/langplay?tab=uzb&title=Uzbek",
+      "target": "../catalogues/counplay?tab=uzb&title=Uzbek&typev=2",
       "text": "Uzbek"
     },
     {
-      "target": "../catalogues/langplay?tab=vie&title=Vietnamese",
+      "target": "../catalogues/counplay?tab=vie&title=Vietnamese&typev=2",
       "text": "Vietnamese"
     },
     {
-      "target": "../catalogues/langplay?tab=fry&title=Western Frisian",
+      "target": "../catalogues/counplay?tab=fry&title=Western Frisian&typev=2",
       "text": "Western Frisian"
     },
     {
-      "target": "../catalogues/langplay?tab=yue&title=Yue Chinese",
+      "target": "../catalogues/counplay?tab=yue&title=Yue Chinese&typev=2",
       "text": "Yue Chinese"
     },
     {
-      "target": "../catalogues/langplay?tab=undefined&title=Others",
+      "target": "../catalogues/counplay?tab=undefined&title=Others&typev=2",
       "text": "Others"
     }
   ]
