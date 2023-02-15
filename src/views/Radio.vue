@@ -1,21 +1,30 @@
 <script setup lang="ts">
 import '../assets/css/main.css';
 import { ref } from 'vue';
-import * as tvCountries from '../../static/jsons/tvcountries.json';
+import axios from 'axios';
 
 const radiosource = ref(['https://de1.api.radio-browser.info/', 'https://fr1.api.radio-browser.info/', 'https://nl1.api.radio-browser.info/']);
 //Set a random integer
 var rand = Math.floor(Math.random() * radiosource.value.length);
 //Get next page number
 const urlParams = new URLSearchParams(window.location.search);
-const key = urlParams.get('t');
+const keyWord = urlParams.get('t');
 //Set next page array
 var radiory = ['', 'json/countries', 'json/languages', 'json/tags'];
 //Set Page Title
-var word = ['', 'Countries', 'Languages', 'Category']
-
-
-const tvContent = ref(tvCountries.ret);
+var word = ['', 'Countries', 'Languages', 'Category'];
+var radioStations:string[][] = [];
+var checkSeen = ref(true);
+document.title = word[Number(keyWord)] + ' Channels';
+axios.get(radiosource.value[rand] + radiory[Number(keyWord)])
+    .then(response => {
+        checkSeen.value = false;
+        for(let i in response.data){
+          radioStations.push([response.data[i].name == "Taiwan Province Of China" ? 'Taiwan' : response.data[i].name, response.data[i].stationcount])
+        }
+}).catch(err => {
+  alert('Can\' t load list now, Please refresh the page to change source links');
+});;
 function hover() {
   document.getElementById('prevbox')!.style.opacity = "1";
 }
@@ -28,10 +37,13 @@ function leave() {
 </script>
 <template>
   <div id="left">
-    <h3>Select Countries</h3>
+    <h3>{{ word[Number(keyWord)] + ' Channels' }}</h3>
     <ul id="menu">
-      <li v-for='item in tvContent'>
-        <p><a :href="item.target">{{ item.text }}</a></p>
+      <li v-show="checkSeen">
+                <p>Channels list is loading...</p>
+            </li>
+      <li v-for='item in radioStations'>
+        <p><a :href="'/catalogues/counplay?tab=' + keyWord + '&title=' + item[0] + '&typev=4'">{{ item[0] + `(${item[1]})` }}</a></p>
       </li>
     </ul>
   </div>

@@ -14,8 +14,13 @@ var numCount = ref(0);
 var toggleRule = ref(true);
 const myDivWidth = ref<HTMLElement | null>(null);
 var toRight = ref();
-//Get default localstorage key
+// TV
 var paramKey = ['countries', 'languages', 'categories'];
+// Radio
+const radiosource = ref(['https://de1.api.radio-browser.info/', 'https://fr1.api.radio-browser.info/', 'https://nl1.api.radio-browser.info/']);
+var rand = Math.floor(Math.random() * radiosource.value.length);
+var radioLink = ['', 'json/stations/bycountry/', 'json/stations/bylanguage/', 'json/stations/bytag/'];
+var radioStations:string[][] = [];
 const urlParams = new URLSearchParams(window.location.search);
 const key = urlParams.get('tab');
 const tis = urlParams.get('title');
@@ -25,13 +30,25 @@ onMounted(() => {
     toRight.value = myDivWidth.value?.getBoundingClientRect().width;
 })
 //Get TV Channels List
-axios.get(`https://iptv-org.github.io/iptv/${paramKey[Number(tyv) - 1]}/` + key + ".m3u")
+if(tyv == '1' || tyv == '2' || tyv == '3'){
+    axios.get(`https://iptv-org.github.io/iptv/${paramKey[Number(tyv) - 1]}/` + key + ".m3u")
     .then(response => {
         checkSeen.value = false;
         let str = response.data;
         lst = str.split(",").slice(1,).filter((x: string) => /[^h]+.m3u8/.test(x)).map((x: string) => x.split("\n"));
         itemName.value = lst[0][1];
     });
+}else if(tyv == '4'){
+    axios.get(radiosource.value[rand] + radioLink[Number(key)] + tis)
+    .then(response => {
+        checkSeen.value = false;
+        let str = response.data;
+        for(let i of str){
+            radioStations.push([i.name, i.favicon, i.url])
+        }
+        itemName.value = radioStations[0][2];
+    });
+}
 //Click Item Play Videos
 function playItem(_e: string, _index: number) {
     itemName.value = _e;
@@ -65,10 +82,17 @@ function changeIcon(_a: string, _b: string) {
 }
 function updateMessage(valueLink: string) {
     if (valueLink == "randomModel") {
-        let detail = lst[Math.floor(Math.random() * lst.length)][1];
-        let playIndex = lst.map((x) => x[1]).indexOf(detail)
-        itemName.value = detail
-        numCount.value = playIndex
+        if(tyv == '1' || tyv == '2' || tyv == '3'){
+            let detail = lst[Math.floor(Math.random() * lst.length)][1];
+            let playIndex = lst.map((x) => x[1]).indexOf(detail)
+            itemName.value = detail
+            numCount.value = playIndex
+        }else if(tyv == '4'){
+            let detail = radioStations[Math.floor(Math.random() * lst.length)][2];
+            let playIndex = radioStations.map((x) => x[2]).indexOf(detail)
+            itemName.value = detail
+            numCount.value = playIndex
+        }
     } else {
         if (valueLink.toLowerCase().endsWith('.m3u8')) {
             itemName.value = valueLink
@@ -86,11 +110,19 @@ function updateMessage(valueLink: string) {
             <li v-show="!checkSeen" style="background-color:#fff"><input id="search" type="text" placeholder="Search..."
                     v-model="inputMessage" /></li>
             <li v-for="(item, index) of lst.filter((x: string) => x[0].toLowerCase().indexOf(inputMessage.toLowerCase()) > -1)"
-                @click="playItem(item[1], index)" :class="index == numCount ? 'bd' : ''">
+                @click="playItem(item[1], index)" :class="index == numCount ? 'bd' : ''" v-if="tyv == '1' || tyv == '2' || tyv == '3'">
                 <p>
                     <input type="button" :class="loveIcon ? getClass(item[1], item[0]) : getClass(item[1], item[0])"
                         @click="changeIcon(item[1], item[0])" />
                     <span :title="item[1]">{{ item[0] }}</span>
+                </p>
+            </li>
+            <li v-for="(item, index) of radioStations.filter(x => x[0].toLowerCase().indexOf(inputMessage.toLowerCase()) > -1)"
+                @click="playItem(item[2], index)" :class="index == numCount ? 'bd' : ''" v-if="tyv == '4'">
+                <p>
+                    <input type="button" :class="loveIcon ? getClass(item[2], item[0]) : getClass(item[2], item[0])"
+                        @click="changeIcon(item[2], item[0])" />
+                    <span :title="item[2]">{{ item[0] }}</span>
                 </p>
             </li>
         </ul>
