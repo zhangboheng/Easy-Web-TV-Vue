@@ -2,10 +2,11 @@
 import { ref, onMounted, nextTick } from 'vue';
 const seen = ref(false);
 const fav = ref(false);
+const epshow = ref(false);
 var loveIcon = ref(true)
 const emmitsClick = defineEmits(['sendParameter:clickPlay']);
 const inputLink = ref('');
-const localkey = ['manga', 'bannedcountries', 'novel', 'movie', 'music', 'languages', 'porn', 'adult'];
+const localkey = ['manga', 'bannedcountries', 'novel', 'movie', 'music', 'languages', 'porn', 'adult', 'selectPop'];
 var favouriteItem: string[] = [];
 var favouriteValue: string[] = [];
 //Default Favourite List
@@ -26,6 +27,7 @@ function sendParameter(value: string) {
         inputLink.value = "";
     })
 }
+
 //Return Last Page
 function backPage() {
     window.history.back();
@@ -64,6 +66,10 @@ function changeIcon(_a: string, _b: string) {
         loveIcon.value = !loveIcon.value;
     });
 }
+//Toggle Epcontent Show Or Hide
+function toggleEpsion(){
+    epshow.value = !epshow.value    
+}
 </script>
 
 <template>
@@ -86,11 +92,12 @@ function changeIcon(_a: string, _b: string) {
                 <li v-for="(item,index) in favouriteItem"><p><input type="button" :class="loveIcon ? getClass(item, favouriteValue[index]) : getClass(item, favouriteValue[index])" @click="changeIcon(item, favouriteValue[index])"/><span :title="item">{{ favouriteValue[index] }}</span></p></li>
             </ul>
         </div>
-        <div id="shuffleplay" title="Random play channels video" v-show="seen">
+        <div id="shuffleplay" title="Random play channels video" v-show="seen" @click="sendParameter('randomModel')">
         </div>
-        <div id="epdetail" title="Content detail" v-show="seen">
+        <div id="epdetail" title="Content detail" v-show="seen" @click="toggleEpsion">
         </div>
-        <div id="epcontent">
+        <div id="epcontent" v-show="epshow">
+            <p><slot></slot></p>
         </div>
     </div>
 </template>
@@ -259,9 +266,26 @@ function changeIcon(_a: string, _b: string) {
     opacity: 1;
 }
 
+#epcontent {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    right: 100px;
+    top: 300px;
+    background: #e62117;
+    z-index: 1000;
+    opacity: 1;
+    color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    outline: 1px solid #fff;
+    outline-offset: -1px;
+    word-break: break-all;
+}
+
 #epcontent p {
     word-break: break-all;
-    text-align: left;
+    text-align: center;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 14px;

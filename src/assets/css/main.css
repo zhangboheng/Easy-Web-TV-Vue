@@ -124,24 +124,6 @@ input[type="button"] {
     height: 100%;
 }
 
-#epcontent {
-    position: absolute;
-    width: 200px;
-    height: 300px;
-    right: 100px;
-    top: 300px;
-    background: #e62117;
-    z-index: 1000;
-    opacity: 1;
-    color: #fff;
-    display: none;
-    overflow-y: auto;
-    overflow-x: hidden;
-    outline: 1px solid #fff;
-    outline-offset: -1px;
-    word-break: break-all;
-}
-
 #div1 {
     width: 100vw;
     height: 100%;

@@ -12,7 +12,7 @@ var loveIcon = ref(true)
 var inputMessage = ref("");
 var numCount = ref(0);
 var toggleRule = ref(true);
-const myDivWidth =  ref<HTMLElement | null>(null);
+const myDivWidth = ref<HTMLElement | null>(null);
 var toRight = ref();
 //Get default localstorage key
 var paramKey = ['countries', 'languages', 'categories'];
@@ -21,7 +21,7 @@ const key = urlParams.get('tab');
 const tis = urlParams.get('title');
 const tyv = urlParams.get('typev');
 document.title = tis + ' Channels';
-onMounted(()=>{
+onMounted(() => {
     toRight.value = myDivWidth.value?.getBoundingClientRect().width;
 })
 //Get TV Channels List
@@ -33,7 +33,7 @@ axios.get(`https://iptv-org.github.io/iptv/${paramKey[Number(tyv) - 1]}/` + key 
         itemName.value = lst[0][1];
     });
 //Click Item Play Videos
-function playItem(_e: string, _index:number) {
+function playItem(_e: string, _index: number) {
     itemName.value = _e;
     numCount.value = _index;
 }
@@ -63,9 +63,16 @@ function changeIcon(_a: string, _b: string) {
         loveIcon.value = !loveIcon.value;
     });
 }
-function updateMessage(valueLink:any){
-    if(valueLink.toLowerCase().endsWith('.m3u8')){
-        itemName.value = valueLink
+function updateMessage(valueLink: string) {
+    if (valueLink == "randomModel") {
+        let detail = lst[Math.floor(Math.random() * lst.length)][1];
+        let playIndex = lst.map((x) => x[1]).indexOf(detail)
+        itemName.value = detail
+        numCount.value = playIndex
+    } else {
+        if (valueLink.toLowerCase().endsWith('.m3u8')) {
+            itemName.value = valueLink
+        }
     }
 }
 </script>
@@ -76,19 +83,23 @@ function updateMessage(valueLink:any){
             <li v-show="checkSeen">
                 <p>Channels list is loading...</p>
             </li>
-            <li v-show="!checkSeen" style="background-color:#fff"><input id="search" type="text" placeholder="Search..." v-model="inputMessage" /></li>
-            <li v-for="(item, index) of lst.filter((x:string)=>x[0].toLowerCase().indexOf(inputMessage.toLowerCase())>-1)" @click="playItem(item[1], index)" :class="index == numCount ? 'bd' : ''">
+            <li v-show="!checkSeen" style="background-color:#fff"><input id="search" type="text" placeholder="Search..."
+                    v-model="inputMessage" /></li>
+            <li v-for="(item, index) of lst.filter((x: string) => x[0].toLowerCase().indexOf(inputMessage.toLowerCase()) > -1)"
+                @click="playItem(item[1], index)" :class="index == numCount ? 'bd' : ''">
                 <p>
-                    <input type="button"
-                        :class="loveIcon ? getClass(item[1], item[0]) : getClass(item[1], item[0])"
+                    <input type="button" :class="loveIcon ? getClass(item[1], item[0]) : getClass(item[1], item[0])"
                         @click="changeIcon(item[1], item[0])" />
                     <span :title="item[1]">{{ item[0] }}</span>
                 </p>
             </li>
         </ul>
     </div>
-    <Tools targetLink=""  @sendParameter:click-play="updateMessage"/>
-    <div class="toggle" :style="{ left: toggleRule ? toRight - 50 + 'px' : '5px' }" @click="toggleRule=!toggleRule"></div>
+    <Tools @sendParameter:click-play="updateMessage">
+        {{ "暂无内容" }}
+    </Tools>
+    <div class="toggle" :style="{ left: toggleRule ? toRight - 50 + 'px' : '5px' }" @click="toggleRule = !toggleRule">
+    </div>
     <div id="right">
         <div id="div1">
             <!-- The element where the player will be placed -->
