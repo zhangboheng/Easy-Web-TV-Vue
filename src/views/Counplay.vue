@@ -8,6 +8,7 @@ import axios from 'axios';
 var lst = [];
 var checkSeen = ref(true);
 var itemName = ref("");
+var imageTarget = ref("");
 var loveIcon = ref(true)
 var inputMessage = ref("");
 var numCount = ref(0);
@@ -47,11 +48,13 @@ if(tyv == '1' || tyv == '2' || tyv == '3'){
             radioStations.push([i.name, i.favicon, i.url])
         }
         itemName.value = radioStations[0][2];
+        imageTarget.value = radioStations[0][1];
     });
 }
 //Click Item Play Videos
-function playItem(_e: string, _index: number) {
+function playItem(_e: string, _index: number, _image: string) {
     itemName.value = _e;
+    imageTarget.value = _image;
     numCount.value = _index;
 }
 //Set Love Icon Size
@@ -88,9 +91,13 @@ function updateMessage(valueLink: string) {
             itemName.value = detail
             numCount.value = playIndex
         }else if(tyv == '4'){
-            let detail = radioStations[Math.floor(Math.random() * lst.length)][2];
+            let ranArr = radioStations[Math.floor(Math.random() * radioStations.length)]
+            let detail = ranArr[2];
+            let imageSour = ranArr[1];
             let playIndex = radioStations.map((x) => x[2]).indexOf(detail)
+            console.info(detail, imageSour, playIndex)
             itemName.value = detail
+            imageTarget.value = imageSour;
             numCount.value = playIndex
         }
     } else {
@@ -110,7 +117,7 @@ function updateMessage(valueLink: string) {
             <li v-show="!checkSeen" style="background-color:#fff"><input id="search" type="text" placeholder="Search..."
                     v-model="inputMessage" /></li>
             <li v-for="(item, index) of lst.filter((x: string) => x[0].toLowerCase().indexOf(inputMessage.toLowerCase()) > -1)"
-                @click="playItem(item[1], index)" :class="index == numCount ? 'bd' : ''" v-if="tyv == '1' || tyv == '2' || tyv == '3'">
+                @click="playItem(item[1], index, '')" :class="index == numCount ? 'bd' : ''" v-if="tyv == '1' || tyv == '2' || tyv == '3'">
                 <p>
                     <input type="button" :class="loveIcon ? getClass(item[1], item[0]) : getClass(item[1], item[0])"
                         @click="changeIcon(item[1], item[0])" />
@@ -118,7 +125,7 @@ function updateMessage(valueLink: string) {
                 </p>
             </li>
             <li v-for="(item, index) of radioStations.filter(x => x[0].toLowerCase().indexOf(inputMessage.toLowerCase()) > -1)"
-                @click="playItem(item[2], index)" :class="index == numCount ? 'bd' : ''" v-if="tyv == '4'">
+                @click="playItem(item[2], index, item[1])" :class="index == numCount ? 'bd' : ''" v-if="tyv == '4'">
                 <p>
                     <input type="button" :class="loveIcon ? getClass(item[2], item[0]) : getClass(item[2], item[0])"
                         @click="changeIcon(item[2], item[0])" />
@@ -128,14 +135,14 @@ function updateMessage(valueLink: string) {
         </ul>
     </div>
     <Tools @sendParameter:click-play="updateMessage">
-        {{ "暂无内容" }}
+        {{ "Nothing" }}
     </Tools>
     <div class="toggle" :style="{ left: toggleRule ? toRight - 50 + 'px' : '5px' }" @click="toggleRule = !toggleRule">
     </div>
     <div id="right">
         <div id="div1">
             <!-- The element where the player will be placed -->
-            <video-embed :sourceLink="itemName" />
+            <video-embed :sourceLink="itemName.replace(';','')" :imageLink="imageTarget"/>
         </div>
     </div>
 </template>

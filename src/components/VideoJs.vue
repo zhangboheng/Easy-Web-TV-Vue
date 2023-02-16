@@ -17,6 +17,7 @@ export default defineComponent({
   },
   props: {
     sourceLink: String,
+    imageLink: String,
   },
   setup() {
     const windowHeight = window.innerHeight
@@ -36,7 +37,7 @@ export default defineComponent({
 <template>
   <video-player class="video-player vjs-big-play-centered"
     :src="sourceLink"
-    poster="https://vjs.zencdn.net/v/oceans.png" crossorigin="anonymous" playsinline controls :volume="0.6"
+    :poster="imageLink" crossorigin="anonymous" playsinline controls :volume="0.6"
     :height="windowHeight" :playback-rates="[0.7, 1.0, 1.5, 2.0]" :autoplay=true @mounted="handleMounted" @ready="handleEvent($event)"
     @play="handleEvent($event)" @pause="handleEvent($event)" @ended="handleEvent($event)"
     @loadeddata="handleEvent($event)" @waiting="handleEvent($event)" @playing="handleEvent($event)"
