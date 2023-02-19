@@ -187,7 +187,6 @@ input[type="button"] {
 /*Comprehensive page css start*/
 
 #selectapi {
-    float: right;
     width: 130px;
     top: 20px;
     right: 10px;
@@ -198,7 +197,7 @@ input[type="button"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    position: relative;
+    position: absolute;
     z-index: 998;
     background: url("../images/change.svg") 96% / 15% no-repeat #EEE;
 }

@@ -4,8 +4,8 @@ import VideoEmbed from '@/components/VideoJs.vue'
 import Tools from '@/components/Tools.vue'
 import { ref, nextTick, onMounted } from 'vue';
 import axios from 'axios';
+import { XMLParser } from "fast-xml-parser"
 
-var lst = [];
 var checkSeen = ref(true);
 var itemName = ref("");
 var imageTarget = ref("");
@@ -15,7 +15,12 @@ var numCount = ref(0);
 var toggleRule = ref(true);
 const myDivWidth = ref<HTMLElement | null>(null);
 var toRight = ref();
+const proxyLinks = ref({
+  0: 'https://cors.luckydesigner.workers.dev/?',
+});
+const intro = ref('Nothing');
 // TV
+var lst = [];
 var paramKey = ['countries', 'languages', 'categories'];
 // Radio
 const radiosource = ref(['https://de1.api.radio-browser.info/', 'https://fr1.api.radio-browser.info/', 'https://nl1.api.radio-browser.info/']);
@@ -25,13 +30,19 @@ var radioStations:string[][] = [];
 const urlParams = new URLSearchParams(window.location.search);
 const key = urlParams.get('tab');
 const tis = urlParams.get('title');
+const web = urlParams.get('web');
 const tyv = urlParams.get('typev');
-document.title = tis + ' Channels';
+const acm = urlParams.get('ac');
+// Theater
+var movieArr:any[] = [];
+// Porn
+var pornArr:any[] = [];
 onMounted(() => {
     toRight.value = myDivWidth.value?.getBoundingClientRect().width;
 })
 //Get TV Channels List
 if(tyv == '1' || tyv == '2' || tyv == '3'){
+    document.title = tis + ' Channels';
     axios.get(`https://iptv-org.github.io/iptv/${paramKey[Number(tyv) - 1]}/` + key + ".m3u")
     .then(response => {
         checkSeen.value = false;
@@ -40,6 +51,7 @@ if(tyv == '1' || tyv == '2' || tyv == '3'){
         itemName.value = lst[0][1];
     });
 }else if(tyv == '4'){
+    document.title = tis + ' Channels';
     axios.get(radiosource.value[rand] + radioLink[Number(key)] + tis)
     .then(response => {
         checkSeen.value = false;
@@ -49,6 +61,48 @@ if(tyv == '1' || tyv == '2' || tyv == '3'){
         }
         itemName.value = radioStations[0][2];
         imageTarget.value = radioStations[0][1];
+    });
+}else if(tyv == '5'){
+    axios.get(proxyLinks.value[0] + `${web?.replace('json','xml')}?ac=videolist&ids=${key}`)
+    .then(response => {
+        checkSeen.value = false;
+        let str = response.data;
+        const options = {
+            parseTagValue: true
+        };
+        const parser = new XMLParser(options);
+        document.title = parser.parse(str).rss.list.video.name;
+        intro.value = parser.parse(str).rss.list.video.des;
+        let nameVideoList:string = "";
+        if(typeof parser.parse(str).rss.list.video.dl.dd != 'object'){
+            nameVideoList = parser.parse(str).rss.list.video.dl.dd
+        }else{
+            nameVideoList = parser.parse(str).rss.list.video.dl.dd.filter((x:string)=>x.indexOf('.m3u8')>-1)[0];
+        }
+        let parseArray = nameVideoList.split(/[$|#]/);
+        let picSource:string = parser.parse(str).rss.list.video.pic;
+        let nameArray:string[] = [];
+        let linkArray:string[] = [];
+        for(let i = 0; i < parseArray.length; i++){
+            if(i%2==0){
+                nameArray.push(parseArray[i])
+            }else{
+                linkArray.push(parseArray[i])
+            }
+        }
+        movieArr = nameArray.map((x,y)=>[document.title + x, picSource, linkArray[y]])
+        itemName.value = movieArr[0][2];
+        imageTarget.value = movieArr[0][1];
+    });
+}else if(tyv == '6'){
+    document.title = tis + '';
+    axios.get(proxyLinks.value[0] + web + `&ids=${key}`)
+    .then(response => {
+        checkSeen.value = false;
+        let str = response.data.data;
+        pornArr = [[str[0].vod_title,str[0].vod_pic,str[0].vpath]];
+        itemName.value = pornArr[0][2];
+        imageTarget.value = pornArr[0][1];
     });
 }
 //Click Item Play Videos
@@ -95,7 +149,22 @@ function updateMessage(valueLink: string) {
             let detail = ranArr[2];
             let imageSour = ranArr[1];
             let playIndex = radioStations.map((x) => x[2]).indexOf(detail)
-            console.info(detail, imageSour, playIndex)
+            itemName.value = detail
+            imageTarget.value = imageSour;
+            numCount.value = playIndex
+        }else if(tyv == '5'){
+            let ranArr = movieArr[Math.floor(Math.random() * movieArr.length)]
+            let detail = ranArr[2];
+            let imageSour = ranArr[1];
+            let playIndex = movieArr.map((x) => x[2]).indexOf(detail)
+            itemName.value = detail
+            imageTarget.value = imageSour;
+            numCount.value = playIndex
+        }else if(tyv == '6'){
+            let ranArr = pornArr[Math.floor(Math.random() * pornArr.length)]
+            let detail = ranArr[2];
+            let imageSour = ranArr[1];
+            let playIndex = pornArr.map((x) => x[2]).indexOf(detail)
             itemName.value = detail
             imageTarget.value = imageSour;
             numCount.value = playIndex
@@ -132,17 +201,33 @@ function updateMessage(valueLink: string) {
                     <span :title="item[2]">{{ item[0] }}</span>
                 </p>
             </li>
+            <li v-for="(item, index) of movieArr.filter(x => x[0].toLowerCase().indexOf(inputMessage.toLowerCase()) > -1)"
+                @click="playItem(item[2], index, item[1])" :class="index == numCount ? 'bd' : ''" v-if="tyv == '5'">
+                <p>
+                    <input type="button" :class="loveIcon ? getClass(item[2], item[0]) : getClass(item[2], item[0])"
+                        @click="changeIcon(item[2], item[0])" />
+                    <span :title="item[2]">{{ item[0] }}</span>
+                </p>
+            </li>
+            <li v-for="(item, index) of pornArr.filter(x => x[0].toLowerCase().indexOf(inputMessage.toLowerCase()) > -1)"
+                @click="playItem(item[2], index, item[1])" :class="index == numCount ? 'bd' : ''" v-if="tyv == '6'">
+                <p>
+                    <input type="button" :class="loveIcon ? getClass(item[2], item[0]) : getClass(item[2], item[0])"
+                        @click="changeIcon(item[2], item[0])" />
+                    <span :title="item[2]">{{ item[0] }}</span>
+                </p>
+            </li>
         </ul>
     </div>
     <Tools @sendParameter:click-play="updateMessage">
-        {{ "Nothing" }}
+        {{ intro }}
     </Tools>
     <div class="toggle" :style="{ left: toggleRule ? toRight - 50 + 'px' : '5px' }" @click="toggleRule = !toggleRule">
     </div>
     <div id="right">
         <div id="div1">
             <!-- The element where the player will be placed -->
-            <video-embed :sourceLink="itemName.replace(';','')" :imageLink="imageTarget"/>
+            <VideoEmbed :sourceLink="itemName.replace(';','')" :imageLink="imageTarget"/>
         </div>
     </div>
 </template>

@@ -126,10 +126,6 @@ const pornSouceArr = ref([{
   val: 'bttzy',
   chk: true,
   text: '博天堂'
-},{
-  val: 'llzy',
-  chk: true,
-  text: '利来'
 }]);
 
 onMounted(()=>{

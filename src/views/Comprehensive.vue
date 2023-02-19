@@ -1,12 +1,68 @@
 <script setup lang="ts">
 import '../assets/css/main.css';
-import { ref, nextTick, onMounted } from 'vue';
+import { ref, onMounted, watch} from 'vue';
+import axios from "axios";
+import { XMLParser } from "fast-xml-parser"
 var toggleRule = ref(true);
 const myDivWidth = ref<HTMLElement | null>(null);
 var toRight = ref();
+const proxyLinks = ref({
+  0: 'https://cors.luckydesigner.workers.dev/?',
+});
+const selectBoxPre = ref([
+  ["https://www.39kan.com/api.php/provide/vod/at/json", "39影视"],
+  ["https://collect.wolongzyw.com/api.php/provide/vod/at/xml", "卧龙影视"],
+  ["http://www.zzrhgg.com/api.php/provide/vod/at/xml", "飘花资源"],
+  ["http://www.kuaibozy.com/api.php/provide/vod/from/kbm3u8/at/xml/", "快播云"],
+  ["https://api.tiankongapi.com/api.php/provide/vod/at/xml/from/tkm3u8/", "天空云"],
+  ["http://cj.bajiecaiji.com/inc/bjm3u8.php", "八戒云"]
+]);
+const selectValue = ref('');
+var checkSeen = ref(true);
+var inputMessage = ref("");
+// Category Collection
+const categoryArr = ref();
+// Videos Collection
+var arrayObj: any[] = [];
+var videosArr4: any[] = [];
+var videosArr3: any[] = [];
+var videosArr2: any[] = [];
+var videosArr: any[] = [];
+// Stream Box Type
+/*Over 1024 = 1; Over 640 = 2; Lower 640 = 3*/
+const typeDifineRule = ref();
+// ItemContainer Show and Hide
+const thridContent = ref(true);
+const fourthContent = ref(true);
+// Set A Category Unity
+const cateCover = ref();
+// Set A Default Count Number
+const countNm = ref(1);
+// Set A Default Type
+const scrollType = ref('homepage');
 onMounted(() => {
-    toRight.value = myDivWidth.value?.getBoundingClientRect().width;
-})
+  toRight.value = myDivWidth.value?.getBoundingClientRect().width;
+  if (window.innerWidth >= 1024) {
+    typeDifineRule.value = 1
+  } else if (window.innerWidth < 1024 && window.innerWidth > 640) {
+    typeDifineRule.value = 2
+  } else {
+    typeDifineRule.value = 3
+  };
+  //Get Select Source
+  try {
+    let ms = window.localStorage.getItem('movie')?.split(",");
+    let arr = ["39ys", "wlys", "phzy", "kby", "tky", "bjy"];
+    let lst = arr.filter(x => ms?.includes(x)).map(x => arr.indexOf(x));
+    selectBoxPre.value.filter((x, y) => lst.includes(y));
+    selectValue.value = selectBoxPre.value[0][0]
+  } catch (e) {
+    selectBoxPre.value = selectBoxPre.value
+    selectValue.value = selectBoxPre.value[0][0]
+  }
+  getMenuAndList(selectBoxPre.value[0][0], 1)
+});
+
 function hover() {
   document.getElementById('prevbox')!.style.opacity = "1";
 }
@@ -16,35 +72,300 @@ function goToPage() {
 function leave() {
   document.getElementById('prevbox')!.style.opacity = "0.5";
 }
+// Get Data Default from Websites
+function getMenuAndList(_link: string, _num: number) {
+  checkSeen.value = true;
+  scrollType.value = 'homepage';
+  axios.all([
+    axios.get(proxyLinks.value[0] + `${_link}?ac=&pg=1`),
+    axios.get(proxyLinks.value[0] + `${_link}?ac=videolist&pg=${_num}`)
+  ]).then(axios.spread((response1, response2) => {
+    checkSeen.value = false;
+    if (_link == 'https://www.39kan.com/api.php/provide/vod/at/json') {
+      // GET Left Category
+      categoryArr.value = response1.data.class;
+      categoryArr.value.unshift({ 'type_id': 0, 'type_name': '最近更新' });
+      // GET Videos List
+      arrayObj.push(...response2.data.list)
+      if (typeDifineRule.value == 1) {
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 4 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 4 == 1);
+        videosArr3 = arrayObj.filter((x: {}, y: number) => y % 4 == 2);
+        videosArr4 = arrayObj.filter((x: {}, y: number) => y % 4 == 3);
+      } else if (typeDifineRule.value == 2) {
+        fourthContent.value = false;
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 3 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 3 == 1);
+        videosArr3 = arrayObj.filter((x: {}, y: number) => y % 3 == 2);
+      } else if (typeDifineRule.value == 3) {
+        thridContent.value = false;
+        fourthContent.value = false;
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 2 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 2 == 1);
+      }
+    } else {
+      // GET Left Category
+      const options = {
+        ignoreAttributes: false
+      };
+      const parser = new XMLParser(options);
+      let typeId = parser.parse(response1.data).rss.class.ty.map((x: number) => x["@_id"]);
+      let typeText = parser.parse(response1.data).rss.class.ty.map((x: string) => x["#text"]);
+      categoryArr.value = [];
+      for (let i in typeId) {
+        categoryArr.value.push({ 'type_id': typeId[i], 'type_name': typeText[i] })
+      }
+      categoryArr.value.unshift({ 'type_id': 0, 'type_name': '最近更新' });
+      // GET Videos List
+      let videoId = parser.parse(response2.data).rss.list.video.map((x: number) => x['id']);
+      let videoPic = parser.parse(response2.data).rss.list.video.map((x: number) => x['pic']);
+      let videoNm = parser.parse(response2.data).rss.list.video.map((x: number) => x['name']);
+      let videoTy = parser.parse(response2.data).rss.list.video.map((x: number) => x['type']);
+      for (let i in videoId) {
+        arrayObj.push({ 'vod_id': videoId[i], 'vod_pic': videoPic[i], 'vod_name': videoNm[i], 'type_name': videoTy[i] })
+      }
+      if (typeDifineRule.value == 1) {
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 4 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 4 == 1);
+        videosArr3 = arrayObj.filter((x: {}, y: number) => y % 4 == 2);
+        videosArr4 = arrayObj.filter((x: {}, y: number) => y % 4 == 3);
+      } else if (typeDifineRule.value == 2) {
+        fourthContent.value = false;
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 3 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 3 == 1);
+        videosArr3 = arrayObj.filter((x: {}, y: number) => y % 3 == 2);
+      } else if (typeDifineRule.value == 3) {
+        thridContent.value = false;
+        fourthContent.value = false;
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 2 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 2 == 1);
+      }
+    }
+  }));
+}
+// Get Category Item
+function getCategory(_cate: number, _num:number) {
+  checkSeen.value = true;
+  scrollType.value = 'cateTarget';
+  cateCover.value = _cate;
+  axios.all([
+    axios.get(proxyLinks.value[0] + `${selectValue.value}?ac=videolist&t=${_cate}&pg=${_num}`),
+  ]).then(axios.spread((response2) => {
+    checkSeen.value = false;
+    if (selectValue.value == 'https://www.39kan.com/api.php/provide/vod/at/json') {
+      // GET Videos List
+      arrayObj.push(...response2.data.list)
+      if (typeDifineRule.value == 1) {
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 4 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 4 == 1);
+        videosArr3 = arrayObj.filter((x: {}, y: number) => y % 4 == 2);
+        videosArr4 = arrayObj.filter((x: {}, y: number) => y % 4 == 3);
+      } else if (typeDifineRule.value == 2) {
+        fourthContent.value = false;
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 3 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 3 == 1);
+        videosArr3 = arrayObj.filter((x: {}, y: number) => y % 3 == 2);
+      } else if (typeDifineRule.value == 3) {
+        thridContent.value = false;
+        fourthContent.value = false;
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 2 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 2 == 1);
+      }
+    } else {
+      // GET Left Category
+      const options = {
+        ignoreAttributes: false
+      };
+      const parser = new XMLParser(options);
+      // GET Videos List
+      let videoId = parser.parse(response2.data).rss.list.video.map((x: number) => x['id']);
+      let videoPic = parser.parse(response2.data).rss.list.video.map((x: number) => x['pic']);
+      let videoNm = parser.parse(response2.data).rss.list.video.map((x: number) => x['name']);
+      let videoTy = parser.parse(response2.data).rss.list.video.map((x: number) => x['type']);
+      for (let i in videoId) {
+        arrayObj.push({ 'vod_id': videoId[i], 'vod_pic': videoPic[i], 'vod_name': videoNm[i], 'type_name': videoTy[i] })
+      }
+      if (typeDifineRule.value == 1) {
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 4 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 4 == 1);
+        videosArr3 = arrayObj.filter((x: {}, y: number) => y % 4 == 2);
+        videosArr4 = arrayObj.filter((x: {}, y: number) => y % 4 == 3);
+      } else if (typeDifineRule.value == 2) {
+        fourthContent.value = false;
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 3 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 3 == 1);
+        videosArr3 = arrayObj.filter((x: {}, y: number) => y % 3 == 2);
+      } else if (typeDifineRule.value == 3) {
+        thridContent.value = false;
+        fourthContent.value = false;
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 2 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 2 == 1);
+      }
+    }
+  }));
+}
+// Search Video
+function searchVideos(_num:number) {
+  let alterLink: string = "";
+  checkSeen.value = true;
+  scrollType.value = 'searchTarget';
+  if (selectValue.value == 'http://www.kuaibozy.com/api.php/provide/vod/from/kbm3u8/at/xml/') {
+    checkSeen.value = false;
+    alert('快播云 not support search');
+  } else if (selectValue.value == 'https://api.tiankongapi.com/api.php/provide/vod/at/xml/from/tkm3u8/') {
+    checkSeen.value = false;
+    alert('天空云 not support search');
+  } else if (selectValue.value == 'http://cj.bajiecaiji.com/inc/bjm3u8.php') {
+    checkSeen.value = false;
+    alert('八戒云 not support search');
+  } else if (selectValue.value == 'https://www.39kan.com/api.php/provide/vod/at/json') {
+    alterLink = proxyLinks.value[0] + `${selectValue.value}?ac=videolist&wd=${inputMessage.value}&pg=${_num}`;
+  } else if (selectValue.value == "https://collect.wolongzyw.com/api.php/provide/vod/at/xml" || selectValue.value == 'http://www.zzrhgg.com/api.php/provide/vod/at/xml') {
+    alterLink = proxyLinks.value[0] + `${selectValue.value}?ac=list&wd=${inputMessage.value}&pg=${_num}`;
+  }
+  axios.all([
+    axios.get(alterLink),
+  ]).then(axios.spread((response2) => {
+    checkSeen.value = false;
+    if (selectValue.value == 'https://www.39kan.com/api.php/provide/vod/at/json') {
+      // GET Videos List
+      arrayObj.push(...response2.data.list)
+      if (typeDifineRule.value == 1) {
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 4 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 4 == 1);
+        videosArr3 = arrayObj.filter((x: {}, y: number) => y % 4 == 2);
+        videosArr4 = arrayObj.filter((x: {}, y: number) => y % 4 == 3);
+      } else if (typeDifineRule.value == 2) {
+        fourthContent.value = false;
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 3 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 3 == 1);
+        videosArr3 = arrayObj.filter((x: {}, y: number) => y % 3 == 2);
+      } else if (typeDifineRule.value == 3) {
+        thridContent.value = false;
+        fourthContent.value = false;
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 2 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 2 == 1);
+      }
+    } else {
+      // GET Left Category
+      const options = {
+        ignoreAttributes: false
+      };
+      const parser = new XMLParser(options);
+      // GET Videos List
+      let videoId = parser.parse(response2.data).rss.list.video.map((x: number) => x['id']);
+      let videoPic = parser.parse(response2.data).rss.list.video.map((x: number) => x['pic']);
+      let videoNm = parser.parse(response2.data).rss.list.video.map((x: number) => x['name']);
+      let videoTy = parser.parse(response2.data).rss.list.video.map((x: number) => x['type']);
+      for (let i in videoId) {
+        arrayObj.push({ 'vod_id': videoId[i], 'vod_pic': videoPic[i], 'vod_name': videoNm[i], 'type_name': videoTy[i] })
+      }
+      if (typeDifineRule.value == 1) {
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 4 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 4 == 1);
+        videosArr3 = arrayObj.filter((x: {}, y: number) => y % 4 == 2);
+        videosArr4 = arrayObj.filter((x: {}, y: number) => y % 4 == 3);
+      } else if (typeDifineRule.value == 2) {
+        fourthContent.value = false;
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 3 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 3 == 1);
+        videosArr3 = arrayObj.filter((x: {}, y: number) => y % 3 == 2);
+      } else if (typeDifineRule.value == 3) {
+        thridContent.value = false;
+        fourthContent.value = false;
+        videosArr = arrayObj.filter((x: {}, y: number) => y % 2 == 0);
+        videosArr2 = arrayObj.filter((x: {}, y: number) => y % 2 == 1);
+      }
+    }
+  }));
+}
+
+// Detect selectValue Change
+watch(selectValue, (newselectValue) => {
+  getMenuAndList(newselectValue, 1);
+  arrayObj = [];
+  countNm.value = 1;
+  let mybutton = document.getElementById("root");
+  mybutton!.scrollTop = 0;
+})
+
+// Detect Scroll
+function handleScroll(e: any) {
+  var clientHeight = e.target.clientHeight
+  var scrollHeight = e.target.scrollHeight
+  var scrollTop = e.target.scrollTop
+  var positionValue = (scrollTop + clientHeight) - scrollHeight;
+  toggleRule.value = false;
+  if (positionValue <= 0 && positionValue >= -20) {
+    checkSeen.value = true;
+    countNm.value = countNm.value + 1
+    if (scrollType.value == 'homepage') {
+      getMenuAndList(selectValue.value, countNm.value);
+    }else if(scrollType.value == 'cateTarget'){
+      getCategory(cateCover.value,countNm.value)
+    }else{
+      searchVideos(countNm.value);
+    }
+  }
+}
 </script>
 <template>
   <div id="left" ref="myDivWidth" v-show="toggleRule">
     <h3>Select Category</h3>
     <ul id="menu">
-      <li>
+      <li v-show="checkSeen">
         <p>Category list is loading...</p>
+      </li>
+      <li v-show="!checkSeen" style="background-color:#fff"><input id="search" type="text" placeholder="Search..."
+          v-model="inputMessage" @keyup.enter="searchVideos(1);arrayObj = []" /></li>
+      <li v-for="item in categoryArr" @click="getCategory(item.type_id,1);countNm = 1;arrayObj = []">
+        <p><span :class="item.type_id">{{ item.type_name }}</span></p>
       </li>
     </ul>
   </div>
   <div class="toggle" :style="{ left: toggleRule ? toRight - 50 + 'px' : '5px' }" @click="toggleRule = !toggleRule"></div>
-  <select id="selectapi">
-  </select>
-  <div id="root">
+  <div id="root" @scroll="handleScroll">
     <div class="itemContainer">
+      <a v-for="cols in videosArr" :href="`../catalogues/counplay?web=${selectValue}&tab=${cols.vod_id}&title=${cols.vod_name}&typev=5`">
+        <div class="item"><img class="itemImg" :src="cols.vod_pic" :alt="cols.vod_name" />
+          <div class="userInfo"><img class="avatar" src="../assets/images/player.jpg" alt="" /><span class="username">{{
+            `[${cols.type_name}]${cols.vod_name}` }}</span></div>
+        </div>
+      </a>
     </div>
     <div class="itemContainer">
+      <a v-for="cols in videosArr2" :href="`../catalogues/counplay?web=${selectValue}&tab=${cols.vod_id}&title=${cols.vod_name}&typev=5`">
+        <div class="item"><img class="itemImg" :src="cols.vod_pic" :alt="cols.vod_name" />
+          <div class="userInfo"><img class="avatar" src="../assets/images/player.jpg" alt="" /><span class="username">{{
+            `[${cols.type_name}]${cols.vod_name}` }}</span></div>
+        </div>
+      </a>
     </div>
-    <div class="itemContainer">
+    <div class="itemContainer" v-show="thridContent">
+      <a v-for="cols in videosArr3" :href="`../catalogues/counplay?web=${selectValue}&tab=${cols.vod_id}&title=${cols.vod_name}&typev=5`">
+        <div class="item"><img class="itemImg" :src="cols.vod_pic" :alt="cols.vod_name" />
+          <div class="userInfo"><img class="avatar" src="../assets/images/player.jpg" alt="" /><span class="username">{{
+            `[${cols.type_name}]${cols.vod_name}` }}</span></div>
+        </div>
+      </a>
     </div>
-    <div class="itemContainer">
-    </div>
-    <div class="itemContainer">
-    </div>
-    <div class="hiddens" style="display: none;">
-      <p>0</p>
+    <div class="itemContainer" v-show="fourthContent">
+      <a v-for="cols in videosArr4" :href="`../catalogues/counplay?web=${selectValue}&tab=${cols.vod_id}&title=${cols.vod_name}&typev=5`">
+        <div class="item"><img class="itemImg" :src="cols.vod_pic" :alt="cols.vod_name" />
+          <div class="userInfo"><img class="avatar" src="../assets/images/player.jpg" alt="" /><span class="username">{{
+            `[${cols.type_name}]${cols.vod_name}` }}</span></div>
+        </div>
+      </a>
+      <div class="loadingimg" v-show="checkSeen"><img src="../assets/images/loading.gif" tag="Easy Web TV Loading"></div>
     </div>
   </div>
   <div id="prevbox" title="Back to previous page" @mouseenter="hover()" @click="goToPage()" @mouseleave="leave()"></div>
+  <select id="selectapi" v-model="selectValue">
+    <option v-for="item in selectBoxPre" :value="item[0]">{{ item[1] }}</option>
+  </select>
+  <div class="hiddens" style="display: none;">
+    <p>{{ countNm }}</p>
+  </div>
 </template>
 
 <style scoped>
@@ -52,9 +373,21 @@ function leave() {
   overflow-y: scroll !important;
 }
 
-.toggle,
-#left {
-  position: fixed !important;
+#root {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.loadingimg {
+  position: fixed;
+  bottom: 10px;
+  z-index: 998;
+  width: 100vw;
+  text-align: center;
+}
+
+.loadingimg img {
+  width: 8%;
 }
 
 #prevbox {
