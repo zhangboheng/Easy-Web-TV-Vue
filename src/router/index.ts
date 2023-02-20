@@ -69,7 +69,7 @@ const router = createRouter({
       name: 'Manga',
       component: () => import('../views/Manga.vue'),
       meta: {
-        title: "Novel"
+        title: "Manga"
       }
     },
     {

@@ -147,7 +147,7 @@ function clearAll() {
       <div id="four_flash">
         <div class="flashBg">
           <ul class="mobile">
-            <CustomView v-for="item in menuArrs" :img-url="item.url" :href-target="item.target"
+            <CustomView v-for="item in menuArrs.filter(x=>x.url.indexOf('reading.svg') == -1 && x.url.indexOf('manga.svg') == -1)" :img-url="item.url" :href-target="item.target"
               :data-reveal-id="item.reveal" :msg="item.message" :info="item.infos" />
           </ul>
         </div>
