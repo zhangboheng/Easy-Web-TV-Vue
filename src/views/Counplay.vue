@@ -32,11 +32,12 @@ const key = urlParams.get('tab');
 const tis = urlParams.get('title');
 const web = urlParams.get('web');
 const tyv = urlParams.get('typev');
-const acm = urlParams.get('ac');
 // Theater
 var movieArr:any[] = [];
 // Porn
 var pornArr:any[] = [];
+// Music
+var musicArr:any[] = [];
 onMounted(() => {
     toRight.value = myDivWidth.value?.getBoundingClientRect().width;
 })
@@ -104,12 +105,43 @@ if(tyv == '1' || tyv == '2' || tyv == '3'){
         itemName.value = pornArr[0][2];
         imageTarget.value = pornArr[0][1];
     });
+}else if(tyv == '7'){
+    document.title = tis + '';
+    axios.get(proxyLinks.value[0] + web + `?id=${key}`)
+    .then(response => {
+        checkSeen.value = false;
+        let str = response.data.songs;
+        for(let i = 0; i < str.length; i++){
+            musicArr.push([str[i].name, '', str[i].id])
+        }
+        audioCheck(musicArr[0][2]);
+        imageTarget.value = musicArr[0][1];
+    });
 }
 //Click Item Play Videos
-function playItem(_e: string, _index: number, _image: string) {
-    itemName.value = _e;
+function playItem(_e: any, _index: number, _image: string) {
+    if(tyv == '7'){
+        audioCheck(_e);
+    }else{
+        itemName.value = _e;
+    }
     imageTarget.value = _image;
     numCount.value = _index;
+}
+//Audio Check
+function audioCheck(_id:number){
+    axios.all([
+    axios.get(proxyLinks.value[0] + 'https://api-music.imsyy.top' + `/check/music?id=${_id}`),
+    axios.get(proxyLinks.value[0] + 'https://api-music.imsyy.top' + '/song/url?id=' + _id),
+  ]).then(axios.spread((response1,response2) => {
+    var data1 = response1.data;
+    var data2 = response2.data.data;
+    if(data1.success){
+        itemName.value = data2[0].url
+    }else{
+        itemName.value = ""
+    }
+  }));
 }
 //Set Love Icon Size
 function getClass(_a: string, _b: string) {
@@ -168,6 +200,14 @@ function updateMessage(valueLink: string) {
             itemName.value = detail
             imageTarget.value = imageSour;
             numCount.value = playIndex
+        }else if(tyv == '7'){
+            let ranArr = musicArr[Math.floor(Math.random() * musicArr.length)]
+            let detail = ranArr[2];
+            let imageSour = ranArr[1];
+            let playIndex = musicArr.map((x) => x[2]).indexOf(detail)
+            audioCheck(detail)
+            imageTarget.value = imageSour;
+            numCount.value = playIndex
         }
     } else {
         if (valueLink.toLowerCase().endsWith('.m3u8')) {
@@ -211,6 +251,14 @@ function updateMessage(valueLink: string) {
             </li>
             <li v-for="(item, index) of pornArr.filter(x => x[0].toLowerCase().indexOf(inputMessage.toLowerCase()) > -1)"
                 @click="playItem(item[2], index, item[1])" :class="index == numCount ? 'bd' : ''" v-if="tyv == '6'">
+                <p>
+                    <input type="button" :class="loveIcon ? getClass(item[2], item[0]) : getClass(item[2], item[0])"
+                        @click="changeIcon(item[2], item[0])" />
+                    <span :title="item[2]">{{ item[0] }}</span>
+                </p>
+            </li>
+            <li v-for="(item, index) of musicArr.filter(x => x[0].toLowerCase().indexOf(inputMessage.toLowerCase()) > -1)"
+                @click="playItem(item[2], index, item[1])" :class="index == numCount ? 'bd' : ''" v-if="tyv == '7'">
                 <p>
                     <input type="button" :class="loveIcon ? getClass(item[2], item[0]) : getClass(item[2], item[0])"
                         @click="changeIcon(item[2], item[0])" />
