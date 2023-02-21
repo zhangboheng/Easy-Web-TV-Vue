@@ -13,5 +13,15 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       '/static': resolve('static')
     }
+  },
+  build: {
+    rollupOptions: {
+      external: [
+        'src/assets/images/menuicon.png',
+        'src/assets/images/wechat.svg',
+        'src/assets/images/wechatpub.jpg',
+        'src/assets/images/nextselect.svg',
+      ]
+    }
   }
-})
+});
